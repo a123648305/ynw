@@ -1,0 +1,204 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  height: 100%;
+}
+body {
+  color: #333;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  height: 100%;
+}
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+input,
+textarea,
+p,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+i,
+em {
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+  outline: none;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+input::-ms-reveal {
+  display: none;
+}
+textarea {
+  resize: none;
+  overflow-y: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+a:hover{
+  text-decoration: none !important;
+  outline: none;
+}
+.area {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0px;
+  max-width: 1400px;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.hand {
+  cursor: pointer;
+}
+/*浮动相关*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cf:after,
+.cf:before {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/*超出隐藏*/
+.ovh {
+  /* overflow: hidden; */
+  *zoom: 1;
+}
+.t-ovh {
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+/*字体相关*/
+.fn {
+  font-weight: normal;
+}
+.fb {
+  font-weight: bold;
+}
+.fy {
+  font-family: "microsoft yahei";
+}
+.f14 {
+  font-size: 14px;
+}
+/*对齐方式*/
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.vt {
+  vertical-align: top;
+}
+.vm {
+  vertical-align: middle;
+}
+/*块显示*/
+.di {
+  display: inline !important;
+}
+.db {
+  display: block !important;
+}
+.dib {
+  display: inline-block !important;
+}
+.dn {
+  display: none !important;
+}

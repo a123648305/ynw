@@ -1,0 +1,232 @@
+.ynw-home {
+  border: 1px solid red;
+}
+.ynw-home-header {
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+}
+.ynw-home-header .logo {
+  margin-right: 10px;
+  width: 60px;
+}
+.ynw-home-header .logo img {
+  width: 100%;
+  height: 40px;
+}
+
+.ynw-home-header .ynw-home-header-search {
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 85, 255, 0.08);
+  border-radius: 18px;
+  padding: 10px;
+  margin-left: auto;
+  color: #bfc5d2;
+}
+.ynw-home-header .ynw-home-header-search input {
+  border: none;
+  background-color: #fff;
+}
+
+.ynw-home-header .ynw-home-header-search .iconfont {
+  font-size: 18px;
+}
+
+.ynw-home-nav {
+  margin-top: 10px;
+  display: flex;
+  line-height: 22px;
+  padding: 0 10px;
+}
+.ynw-home-nav > ul {
+  flex: 1;
+  overflow: auto hidden;
+  display: flex;
+  margin-bottom: 0;
+}
+.ynw-home-nav > ::-webkit-scrollbar {
+  display: none;
+}
+
+.ynw-home-nav > ul li {
+  min-width: 50px;
+  padding: 0 10px;
+  display: inline-flex;
+}
+.ynw-home-nav > ul li a {
+  min-width: 50px;
+  color: #111e36;
+  font-size: 16px;
+}
+
+.ynw-home-nav .active_nav a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111e36;
+}
+
+.ynw-home-nav .active_nav::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 16px;
+  height: 7px;
+  margin-left: -8px;
+  background: url("./img/logo.png") no-repeat 50%/100%;
+  border-radius: 5px;
+}
+
+.ynw-home-nav > .icon-xinzengdaohangliebiao {
+  font-size: 18px;
+}
+
+.ynw-home-carousel {
+  margin: 10px;
+}
+.ynw-home-carousel .carousel-inner {
+  border-radius: 4px;
+}
+.ynw-home-carousel .carousel-indicators {
+  bottom: -20px;
+}
+
+.ynw-home-carousel .carousel-indicators li {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.ynw-home-bean {
+  position: relative;
+  height: 72px;
+  margin: 12px 16px 0;
+  overflow: hidden;
+}
+
+.ynw-home-bean .carousel {
+  width: 200%;
+  overflow: hidden;
+  will-change: tranform;
+  transform: translate3d(0%, 0, 0);
+}
+
+.ynw-home-bean .carousel .c-item {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.ynw-home-bean .navi {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.ynw-home-bean .navi i {
+  display: inline-block;
+  vertical-align: top;
+  width: 9px;
+  height: 3px;
+  background-color: #e6ebf5;
+}
+
+.ynw-home-bean .navi i.activate {
+  background-color: #111e36;
+}
+
+.homepage-bean__item {
+  overflow: hidden;
+}
+
+.ynw-home-bean a,
+.ynw-home-bean div.homepage-bean__all {
+  display: block;
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+
+.ynw-home-bean a i,
+.ynw-home-bean a img,
+.ynw-home-bean div.homepage-bean__all i,
+.ynw-home-bean div.homepage-bean__all img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.ynw-home-bean a strong,
+.ynw-home-bean div.homepage-bean__all strong {
+  display: block;
+  margin: 4px -6px 0;
+  font-size: 12px;
+  color: #111e36;
+  white-space: nowrap;
+  pointer-events: none;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 375px) {
+  .ynw-home-bean a strong,
+  .ynw-home-bean div.homepage-bean__all strong {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.ynw-home-heat {
+  margin: 14px 16px 0 16px;
+  box-shadow: 0 5px 20px 0 rgba(17,30,54,.08);
+}
+
+.ynw-home-heat .ynw-home-heat-head {
+  white-space: nowrap;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.ynw-home-heat .ynw-home-heat-head::-webkit-scrollbar {
+  display: none;
+}
+
+.ynw-home-heat .ynw-home-heat-head .ynw-home-heat-head__item {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #111e36;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.ynw-home-heat .ynw-home-heat-head .activate {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ynw-home-heat-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ynw-home-heat-content__imagetext {
+  width: 20%;
+  font-size: 12px;
+  color: #111e36;
+  text-align: center;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.ynw-home-heat-content__imagetext img {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 4px;
+}
+
+/* .fn-hide {
+    display: none;
+} */

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/c/font_4321680_486a77yw0o2.css"
+    />
+    <!-- bootstrap && jq-->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery.slim.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- 页面js -->
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="ynw-home">
+      <header class="ynw-home-header">
+        <a class="logo" href="#">
+          <img src="./img/logo2.png" alt="logo" />
+        </a>
+        <div class="ynw-home-header-search">
+          <i class="iconfont icon-sousuo"></i>
+          <input type="text" placeholder="搜索" disabled />
+          <i class="iconfont icon-saoma"></i>
+        </div>
+      </header>
+      <!-- nav tab -->
+      <nav class="ynw-home-nav">
+        <ul>
+          <li><a href="#">关注</a></li>
+          <li class="active_nav"><a href="#">推荐</a></li>
+          <li><a href="#">原创</a></li>
+          <li><a href="#">直播</a></li>
+          <li><a href="#">关注2</a></li>
+          <li><a href="#">推荐2</a></li>
+          <li><a href="#">原创2</a></li>
+          <li><a href="#">直播2</a></li>
+        </ul>
+        <i class="iconfont icon-xinzengdaohangliebiao"></i>
+      </nav>
+      <!-- 轮播图 -->
+      <div
+        id="carouselExampleIndicators"
+        class="ynw-home-carousel carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/banner1.png.webp"
+              class="d-block w-100"
+              alt="banner1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner2.jpg.webp"
+              class="d-block w-100"
+              alt="banner2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/banner3.jpg.webp"
+              class="d-block w-100"
+              alt="banner3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <section class="ynw-home-bean">
+        <ul class="carousel">
+          <li class="c-item" index="1">
+            <a position="6">
+              <img src="./img/bean1.png" />
+              <strong>去哪玩</strong>
+            </a>
+
+            <a position="7">
+              <img src="./img/bean2.png" />
+              <strong>好车低价</strong>
+            </a>
+
+            <a position="8">
+              <img src="./img/bean3.png" />
+              <strong>汽车口碑</strong>
+            </a>
+
+            <a position="9">
+              <img src="./img/bean3.png" />
+              <strong>0息购车</strong>
+            </a>
+
+            <div class="homepage-bean__all">
+              <img src="./img/bean3.png" />
+              <strong>全部</strong>
+            </div>
+          </li>
+
+          <li class="c-item" index="2">
+            <a position="6">
+              <img src="./img/bean1.png" />
+              <strong>去哪玩</strong>
+            </a>
+
+            <a position="7">
+              <img src="./img/bean2.png" />
+              <strong>好车低价</strong>
+            </a>
+
+            <a position="8">
+              <img src="./img/bean3.png" />
+              <strong>汽车口碑</strong>
+            </a>
+
+            <a position="9">
+              <img src="./img/bean3.png" />
+              <strong>0息购车</strong>
+            </a>
+
+            <div class="homepage-bean__all">
+              <img src="./img/bean3.png" />
+              <strong>全部</strong>
+            </div>
+          </li>
+        </ul>
+        <div class="navi">
+          <span class="dot"><i class="activate"></i><i class=""></i></span>
+        </div>
+      </section>
+
+      <!-- 品牌 -->
+      <section class="ynw-home-heat">
+        <div class="ynw-home-heat-wrap">
+          <div class="ynw-home-heat-head">
+            <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
+              >官方钜惠</a
+            >
+            <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
+              >购车</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="ynw-home-heat-head__item item activate"
+              >主打车</a
+            >
+            <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
+              >贷款购车</a
+            >
+            <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
+              >二手车</a
+            >
+            <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
+              >新车特卖</a
+            >
+          </div>
+          <div class="ynw-home-heat-content" data-role="content">
+            <a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car1.png" alt="1" /><br /><span>阿维塔</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car2.png" alt="1" /><br /><span>日产</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car3.png" alt="1" /><br /><span>红旗</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car1.png" alt="1" /><br /><span>捷尼赛思</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car1.png" alt="1" /><br /><span>比亚迪</span></a
+            >
+            <a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car2.png" alt="1" /><br /><span>零跑</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car1.png" alt="1" /><br /><span>林肯</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car1.png" alt="1" /><br /><span>领克</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car4.png" /><br /><span>腾势</span></a
+            ><a class="ynw-home-heat-content__imagetext">
+              <img src="./img/car_more.png" /><br /><span>更多</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>contxt</section>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
