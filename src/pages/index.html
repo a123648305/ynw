@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>首页</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
-      href="//at.alicdn.com/t/c/font_4321680_486a77yw0o2.css"
+      href="//at.alicdn.com/t/c/font_4321680_9exoc7d6cwc.css"
     />
     <!-- bootstrap && jq-->
     <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <script src="./lib/jquery.slim.js"></script>
+    <script src="./lib/jquery-1.9.1.min.js"></script>
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- 页面js -->
     <script src="./js/index.js"></script>
@@ -86,7 +86,7 @@
 
       <!-- tab -->
       <section class="ynw-home-bean">
-        <ul class="carousel">
+        <ul class="carousel" id="carouselTab">
           <li class="c-item" index="1">
             <a position="6">
               <img src="./img/bean1.png" />
@@ -149,7 +149,7 @@
       <!-- 品牌 -->
       <section class="ynw-home-heat">
         <div class="ynw-home-heat-wrap">
-          <div class="ynw-home-heat-head">
+          <div class="ynw-home-heat-head" id="heat-touch">
             <a href="javascript:void(0)" class="ynw-home-heat-head__item item"
               >官方钜惠</a
             >

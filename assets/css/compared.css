@@ -1,0 +1,123 @@
+.ynw-compared {
+}
+.ynw-compared-header {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.ynw-compared-header-mid {
+  flex: 3;
+  text-align: center;
+}
+
+.ynw-compared-header-left,
+.ynw-compared-header-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ynw-compared .iconfont {
+  font-size: 22px;
+}
+
+.ynw-compared-nav {
+  border-bottom: 10px solid #eee;
+}
+
+.ynw-compared-nav-title {
+  border-bottom: 1px solid #2873ff;
+  color: #2873ff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.ynw-compared-console {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 84px;
+  vertical-align: middle;
+}
+
+.ynw-compared-console .left {
+  display: table-cell;
+  width: 140px;
+  vertical-align: middle;
+}
+
+.ynw-compared-console .main {
+  display: flex;
+}
+
+.ynw-compared-console .card-item {
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(27,27,27,.1);
+    padding: 6px;
+    margin:10px 4px;
+}
+
+.ynw-compared-console .card-item .title {
+  height: 48px;
+  margin: 12px 4px 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ynw-compared-console .card-item .price {
+  margin: 6px 4px 0 4px;
+  font-size: 14px;
+  color: #f9712c;
+}
+
+.ynw-compared-category {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14px;
+  align-items: center;
+  border-top: 1px solid #eee;
+  line-height: 40px;
+}
+
+.ynw-compared-category .caption {
+  width: 90px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  line-height: 20px;
+}
+
+.ynw-compared-category .direction .mark-bp {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 0;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.ynw-compared-category .direction .mark-xp {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 0;
+  border: 1px solid #666;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.ynw-compared-category .direction .mark-wu {
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #666;
+  margin: 0 6px;
+}

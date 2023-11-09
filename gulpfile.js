@@ -52,10 +52,10 @@ const watchFile = function () {
     compileCss();
     cb();
   });
-//   watch("./src/js/**/*.js", (cb) => {
-//     compileJs();
-//     cb();
-//   });
+  watch("./src/js/**/*.js", (cb) => {
+    compileJs();
+    cb();
+  });
   watch("./src/pages/**/*.html", (cb) => {
     compileHtml();
     cb();
