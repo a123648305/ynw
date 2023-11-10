@@ -1,5 +1,5 @@
 .ynw-baseInfo {
-  background: #f6f7fa;
+  background-color: #f5f7fa;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -57,14 +57,10 @@
   opacity: 1;
 }
 
-
-
-.ynw-baseInfo-container{
-    flex: 1;
-    overflow: auto;
+.ynw-baseInfo-container {
+  flex: 1;
+  overflow: auto;
 }
-
-
 
 .ynw-baseInfo-content {
   margin: 8px 10px;

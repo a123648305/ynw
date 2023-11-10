@@ -1,0 +1,82 @@
+<!-- compared page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>配置参数</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/configureInfo.css" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
+    />
+    <!-- bootstrap && jq-->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery-1.9.1.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- 页面js -->
+    <script src="./js/baseInfo.js"></script>
+  </head>
+  <body>
+    <div class="ynw-configureInfo">
+      <header class="ynw-configureInfo-header shadow-sm">
+        <div class="ynw-configureInfo-header-left">
+          <i class="iconfont icon-houtui"></i>
+        </div>
+        <div class="ynw-configureInfo-header-mid">
+          <div class="header-title">
+            <div class="header-title-item">
+              <div class="tab-Name">车辆信息</div>
+            </div>
+            <div class="header-title-item titleActive">
+              <div class="tab-Name">配置参数</div>
+              <div class="bottom-active"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ynw-configureInfo-header-right">我要纠正</div>
+      </header>
+
+      <div class="ynw-configureInfo-tip">
+        <i class="iconfont icon-tishi"></i>
+        <span>以下为该车型新车出厂时的参数配置信息，交易请以实车为准</span>
+      </div>
+
+      <section class="ynw-configureInfo-container">
+        <div id="list-scroll" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1"
+            >Item 1</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-2"
+            >Item 2</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-3"
+            >Item 3</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-4"
+            >Item 4</a
+          >
+        </div>
+        <div
+          data-spy="scroll"
+          data-target="#list-scroll"
+          data-offset="0"
+          class="scrollspy-content"
+        >
+          <h4 id="list-item-1">Item 1</h4>
+          <p style="height:300px">...</p>
+          <h4 id="list-item-2">Item 2</h4>
+          <p style="height:300px">...</p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>...</p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>...</p>
+        </div>
+      </section>
+
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
