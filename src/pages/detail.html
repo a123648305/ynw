@@ -1,0 +1,521 @@
+<!-- compared page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>详情信息</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
+    />
+    <!-- bootstrap && jq-->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery-1.9.1.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- 页面js -->
+<!--    <script src="./js/detail.js"></script>-->
+  </head>
+  <body>
+    <div class="ynw-detail">
+<!--      <header class="ynw-detail-header shadow-sm">-->
+<!--        <div class="ynw-detail-header-left">-->
+<!--          <i class="iconfont icon-houtui"></i>-->
+<!--        </div>-->
+<!--        <div class="ynw-detail-header-mid">-->
+<!--          <div class="header-title">-->
+<!--            <div class="header-title-item titleActive">-->
+<!--              <div class="tab-Name">车辆信息</div>-->
+<!--              <div class="bottom-active"></div>-->
+<!--            </div>-->
+<!--            <div class="header-title-item">-->
+<!--              <div class="tab-Name">配置参数</div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="ynw-detail-header-right">我要纠正</div>-->
+<!--      </header>-->
+
+          <!-- 轮播图 -->
+          <div
+                  id="carouselExampleIndicators"
+                  class="ynw-home-carousel carousel slide"
+                  data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                      class="active"
+              ></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                        src="./img/banner1.png.webp"
+                        class="d-block w-100"
+                        alt="banner1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                        src="./img/banner2.jpg.webp"
+                        class="d-block w-100"
+                        alt="banner2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                        src="./img/banner3.jpg.webp"
+                        class="d-block w-100"
+                        alt="banner3"
+                />
+              </div>
+            </div>
+          </div>
+
+
+<!--          基本信息展示-->
+      <div class="ynw-detail-base shadow">
+        <div class="price">
+          <span class="price-text">43.88</span>
+          <span class="price-sigle">万</span>
+          <i class="iconfont icon-tishi"></i>
+          <span class="price-new">新车含税价75.54万</span>
+        </div>
+
+        <p class="recent">同款近期成交6辆</p>
+
+        <div class="price-method">
+          <span>1成首付4.39万起,月供1.15万起</span>
+          <span>分期方案 <i class="iconfont icon-tishi"></i></span>
+        </div>
+
+        <div class="product-name">
+          沃尔沃XC90 2021款 B6 豪华版本 7座(进口)
+        </div>
+        <div class="product-tags">
+          <div class="product-tags-list">
+            <span class="product-tags-item">榜单 19-22 款性价比第三名</span>
+            <span class="product-tags-item">内饰整洁</span>
+            <span class="product-tags-item">空间大</span>
+          </div>
+          <i class="iconfont icon-tishi"></i>
+        </div>
+
+        <div   class="price-im">
+          <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAM9QTFRFMTdBMDhCMThBMz1HMDdCSUlJMTdCNjxDMTlCMjpCMzlEMThBMDdCMThBMDhCMjlCMjhBMDdBOztOMDhCVVVVMjhCMzdEMDdCMDdDMThCMTdBMTdBMThCMThCMThCMDlBMTdBMThCMTdBNDpGMTpDMTxBMThCMjhCMT1DMjtDMjdBMDlBMDhBQEBVNTtBMDhCMTdBMDhCgICAMTdCMjhCMThCMThBMTdCMDdCMTdDMThCQEBgMTtFNDlCMjlDMDdCMTpC////NDhEAAAAMDdB2n/n4AAAAER0Uk5Ty5qNGfkH8CaHQi271PupbFb+DZ4GTTyvb23mmOWX4Fr6jMwsOS+bgCo9ZnnyDCt/4vgComDR6tX0htoIGjZM/R8BQAAMrYGYAAAB80lEQVRIx5WW52LCIBSF02FbZ4ejdW/j3itmInn/Z2ou0SojgZ4/UThfwr3ABQ2LZHV7va6FRF0a24Bso3P0iY4dw0YSoF+v+ZRq9X4M4G1cn5O78SKAWXvlC7Vqz0SAt7saTgN97BTH+uB0bdl5PDDah32HyfD2uuHkELbuRyzQbJGO5XZNx7jeLknHc5MGRsTvLkw+8eaCZKI1ugc8Mp6pI5xF7EzJqLwbMCPxNuY4QvMGiXz2BzyS90f6A4J8o30FPMi/6+AYORDHyrsAG8AXOFYL8GxCoA/00owHTMiu2ydAFeAtlmgLrioAqALzu5YBa5jzCgoAG9AJlmoCPjsADPgxlAND8BkB0IH1iRUEa7eDNQT7caACDGDXIs2CL+kqgA5OS+vCY6wCjMHZ1XrwcFQAB5y9ECiqAGdwnv8xpAvABm2XU7c/qbLNAUxaPz79rHFZiKaR9T8/WICZuDSpM+9Jy0q+kyqT5gB6aeTZKpbnAHrxWRnan3niAFSjlvdX7t6f++KCxrjObCD7+1ruv21BWkVbtFBq/vw0SwXhPCgWAQpQKDM0gNuyQsYCslLJAZJiLADiyr0YiDxQIgHxkRUHsIfimdMD9L2qHLt3ekHyg53SG3d1qFbi/Foi9nLCjectIbjNECi4/vBBv5KbzS9GoUDtCuYxLwAAAABJRU5ErkJggg==" alt="" class="im-icon">
+          <p class="im-text">费用明细包括哪些？</p>
+          <p class="im-action">立即咨询</p>
+        </div>
+
+<!--        基本信息区-->
+        <div class="info-list">
+          <div class="info-list-item">
+            <div class="item-label">档案</div>
+            <div class="item-value">
+              <div class="content">
+                <p class="value">2021-05</p>
+                <p class="label">首次上牌</p>
+              </div>
+              <div class="content">
+                <p class="value">2021-05</p>
+                <p class="label">首次上牌</p>
+              </div>
+              <div class="content">
+                <p class="value">4.02万公里</p>
+                <p class="label">表显里程</p>
+              </div>
+              <div class="content">
+                <p class="value">4次</p>
+                <p class="label">过后次数</p>
+              </div>
+            </div>
+            <i class="iconfont icon-tishi"></i>
+          </div>
+
+          <div class="info-list-item">
+            <div class="item-label">参数</div>
+            <div class="item-value">
+              <div class="content">
+                <p class="value">2.0L</p>
+                <p class="label">发动机</p>
+              </div>
+              <div class="content">
+                <p class="value">自动</p>
+                <p class="label">变速箱</p>
+              </div>
+              <div class="content">
+                <p class="value">国六b</p>
+                <p class="label">可迁深圳</p>
+              </div>
+              <div class="content">
+                <p class="value">45156156161</p>
+                <p class="label">车源编号</p>
+              </div>
+            </div>
+            <i class="iconfont icon-tishi"></i>
+          </div>
+
+          <div class="info-list-item">
+            <div class="item-label">亮点</div>
+            <div class="item-value">
+              <div class="content">
+                <img src="./img/info1.png" alt="icon1" />
+                <p class="label">感应后备箱</p>
+              </div>
+              <div class="content">
+                <img src="./img/info2.png" alt="icon1" />
+                <p class="label">自适应巡航</p>
+              </div>
+              <div class="content">
+                <img src="./img/info3.png" alt="icon1" />
+                <p class="label">车道偏离系统</p>
+              </div>
+              <div class="content">
+                <img src="./img/info4.png" alt="icon1" />
+                <p class="label">全液晶仪表盘显示</p>
+              </div>
+            </div>
+            <i class="iconfont icon-tishi"></i>
+          </div>
+        </div>
+
+        <div  class="base-info-action">
+          <div  class="base-info-action-item" >
+            <img  src="https://image1.guazistatic.com/qn2205111501382b71499d559e4ac016488aba764b6c1f.png" alt="">
+            <span >算到手价</span>
+            <i class="iconfont icon-tishi"></i>
+          </div>
+          <div class="base-info-action-item">
+            <img  src="https://image1.guazistatic.com/qn2205111516522c305d116e1a3b10b7bbffc255376ab8.png" alt="">
+            <span >车辆对比</span>
+            <i class="iconfont icon-tishi"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--  大家再看-->
+      <div class="ynw-detail-watch shadow">
+            <div class="title">
+              <p>大家都再看</p>
+              <span></span>
+            </div>
+            <div class="product">
+              <div class="product-item">
+                <img src="./img/product1.webp" alt="car1">
+                <div class="product-item-label">
+                  <span class="tag"></span>
+                  大众探岳GET 2020款 1.4123123123123
+                </div>
+                <div class="product-item-other">
+                  <span>2021年</span>
+                  <span>6.95万公里</span>
+                </div>
+                <div class="product-item-price">
+                  <span class="money">13.45</span>
+                  <span>券后价</span>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./img/product1.webp" alt="car1">
+                <div class="product-item-label">
+                  <span class="tag"></span>
+                  大众探岳GET 2020款 1.4123123123123
+                </div>
+                <div class="product-item-other">
+                  <span>2021年</span>
+                  <span>6.95万公里</span>
+                </div>
+                <div class="product-item-price">
+                  <span class="money">13.45</span>
+                  <span>券后价</span>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./img/product1.webp" alt="car1">
+                <div class="product-item-label">
+                  <span class="tag"></span>
+                  大众探岳GET 2020款 1.4123123123123
+                </div>
+                <div class="product-item-other">
+                  <span>2021年</span>
+                  <span>6.95万公里</span>
+                </div>
+                <div class="product-item-price">
+                  <span class="money">13.45</span>
+                  <span>券后价</span>
+                </div>
+              </div>
+
+              <div class="product-item">
+                <img src="./img/product1.webp" alt="car1">
+                <div class="product-item-label">
+                  <span class="tag"></span>
+                  大众探岳GET 2020款 1.4123123123123
+                </div>
+                <div class="product-item-other">
+                  <span>2021年</span>
+                  <span>6.95万公里</span>
+                </div>
+                <div class="product-item-price">
+                  <span class="money">13.45</span>
+                  <span>券后价</span>
+                </div>
+              </div>
+
+            </div>
+      </div>
+
+
+<!--  比价列表-->
+      <div class="ynw-detail-list shadow">
+        <div class="ynw-detail-list-group">
+        <div class="summary-title">2022款</div>
+        <div class="summary-subtitle">1.3升 涡轮增压 163马力 国VI</div>
+        <ul class="ynw-detail-list-item">
+          <li>
+              <div class="d-flex d-flex-center">
+                <div class="caption">2022款 改款二 B 200 动感型</div>
+                <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="choose">
+                  <strong>56.4%</strong>的人选择
+                </div>
+                <div class="factory" >
+                  厂商指导价：26.98万
+                  <strong class="rangedown">
+                    <i class="iconfont icon-tishi"></i>
+                    9.44万
+                  </strong>
+                </div>
+              </div>
+            <div class="d-flex ">
+              <div class="pk">
+                <i class="icofont icon-duibi"></i>去对比
+              </div>
+<!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+            </div>
+          </li>
+          <li>
+            <div class="d-flex d-flex-center">
+              <div class="caption">2022款 改款二 B 200 动感型</div>
+              <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+              </div>
+            </div>
+            <div class="d-flex mt-2">
+              <div class="choose">
+                <strong>56.4%</strong>的人选择
+              </div>
+              <div class="factory" >
+                厂商指导价：26.98万
+                <strong class="rangedown">
+                  <i class="iconfont icon-tishi"></i>
+                  9.44万
+                </strong>
+              </div>
+            </div>
+            <div class="d-flex ">
+              <div class="pk">
+                <i class="icofont icon-duibi"></i>去对比
+              </div>
+              <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+            </div>
+          </li>
+          <li>
+            <div class="d-flex d-flex-center">
+              <div class="caption">2022款 改款二 B 200 动感型</div>
+              <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+              </div>
+            </div>
+            <div class="d-flex mt-2">
+              <div class="choose">
+                <strong>56.4%</strong>的人选择
+              </div>
+              <div class="factory" >
+                厂商指导价：26.98万
+                <strong class="rangedown">
+                  <i class="iconfont icon-tishi"></i>
+                  9.44万
+                </strong>
+              </div>
+            </div>
+            <div class="d-flex ">
+              <div class="pk">
+                <i class="icofont icon-duibi"></i>去对比
+              </div>
+              <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+            </div>
+          </li>
+          <li>
+            <div class="d-flex d-flex-center">
+              <div class="caption">2022款 改款二 B 200 动感型</div>
+              <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+              </div>
+            </div>
+            <div class="d-flex mt-2">
+              <div class="choose">
+                <strong>56.4%</strong>的人选择
+              </div>
+              <div class="factory" >
+                厂商指导价：26.98万
+                <strong class="rangedown">
+                  <i class="iconfont icon-tishi"></i>
+                  9.44万
+                </strong>
+              </div>
+            </div>
+            <div class="d-flex ">
+              <div class="pk">
+                <i class="icofont icon-duibi"></i>去对比
+              </div>
+              <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+            </div>
+          </li>
+        </ul>
+      </div>
+
+        <div class="ynw-detail-list-group">
+          <div class="summary-title">2023款</div>
+          <div class="summary-subtitle">2.0升 涡轮增压 204马力 国VI</div>
+          <ul class="ynw-detail-list-item">
+            <li>
+              <div class="d-flex d-flex-center">
+                <div class="caption">2022款 改款二 B 200 动感型</div>
+                <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="choose">
+                  <strong>56.4%</strong>的人选择
+                </div>
+                <div class="factory" >
+                  厂商指导价：26.98万
+                  <strong class="rangedown">
+                    <i class="iconfont icon-tishi"></i>
+                    9.44万
+                  </strong>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div class="pk">
+                  <i class="icofont icon-duibi"></i>去对比
+                </div>
+                <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+              </div>
+            </li>
+            <li>
+              <div class="d-flex d-flex-center">
+                <div class="caption">2022款 改款二 B 200 动感型</div>
+                <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="choose">
+                  <strong>56.4%</strong>的人选择
+                </div>
+                <div class="factory" >
+                  厂商指导价：26.98万
+                  <strong class="rangedown">
+                    <i class="iconfont icon-tishi"></i>
+                    9.44万
+                  </strong>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div class="pk">
+                  <i class="icofont icon-duibi"></i>去对比
+                </div>
+                <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+              </div>
+            </li>
+            <li>
+              <div class="d-flex d-flex-center">
+                <div class="caption">2022款 改款二 B 200 动感型</div>
+                <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="choose">
+                  <strong>56.4%</strong>的人选择
+                </div>
+                <div class="factory" >
+                  厂商指导价：26.98万
+                  <strong class="rangedown">
+                    <i class="iconfont icon-tishi"></i>
+                    9.44万
+                  </strong>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div class="pk">
+                  <i class="icofont icon-duibi"></i>去对比
+                </div>
+                <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+              </div>
+            </li>
+            <li>
+              <div class="d-flex d-flex-center">
+                <div class="caption">2022款 改款二 B 200 动感型</div>
+                <div class="caption-price">
+                <span >
+                  <strong>17.54</strong>万起
+                </span>
+                </div>
+              </div>
+              <div class="d-flex mt-2">
+                <div class="choose">
+                  <strong>56.4%</strong>的人选择
+                </div>
+                <div class="factory" >
+                  厂商指导价：26.98万
+                  <strong class="rangedown">
+                    <i class="iconfont icon-tishi"></i>
+                    9.44万
+                  </strong>
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div class="pk">
+                  <i class="icofont icon-duibi"></i>去对比
+                </div>
+                <!--              <a  href="javascript:void(0);" class="" >获取底价</a>-->
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>

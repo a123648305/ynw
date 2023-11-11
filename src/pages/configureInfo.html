@@ -1,4 +1,4 @@
-<!-- compared page-->
+<!-- configureInfo page-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,82 +44,193 @@
         <span>以下为该车型新车出厂时的参数配置信息，交易请以实车为准</span>
       </div>
 
+      <!--      表格详情-->
       <section class="ynw-configureInfo-container">
+<!--        左侧nav锚点-->
         <div id="list-scroll" class="list-group">
-          <a class="list-group-item list-group-item-action" href="#list-item-1"
-            >Item 1</a
+          <a class="list-group-item list-group-item-action" href="#record-item-1"
+            >灯光配置</a
           >
-          <a class="list-group-item list-group-item-action" href="#list-item-2"
-            >Item 2</a
+          <a class="list-group-item list-group-item-action" href="#record-item-2"
+            >发动机</a
           >
-          <a class="list-group-item list-group-item-action" href="#list-item-3"
-            >Item 3</a
+          <a class="list-group-item list-group-item-action" href="#record-item-3"
+            >安全配置</a
           >
-          <a class="list-group-item list-group-item-action" href="#list-item-4"
-            >Item 4</a
+          <a class="list-group-item list-group-item-action" href="#record-item-4"
+            >灯光配置</a
+          >
+          <a class="list-group-item list-group-item-action" href="#record-item-5"
+          >灯光配置2</a
           >
         </div>
+
+<!--        右侧详情-->
         <div
           data-spy="scroll"
           data-target="#list-scroll"
           data-offset="0"
           class="scrollspy-content"
         >
-          <h4 id="list-item-1">Item 1</h4>
-
-          <div class="record-body__list__item">
-            <div class="list-item__title">
-              <span class="list-item__title__text">灯光配置</span>
-              <div class="list-item__title__sub">
+          <div class="record-item" id="record-item-1">
+            <div class="record-item-title">
+              <span class="record-item-title-text">灯光配置</span>
+              <div class="record-item-title-sub">
                 <b class="point-standard"></b>
                 标配
                 <b class="point-config"></b>
                 选配
               </div>
             </div>
-            <ul class="list-item__body">
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">近光灯</span>
-                <div class="list-item__body__row__content">LED</div>
+            <ul class="record-item-body">
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">近光灯</span>
+                <div class="record-item-body-content">LED</div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">车内氛围灯</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">车内氛围灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-config point-blod"></span>
                 </div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">远光灯</span>
-                <div class="list-item__body__row__content">LED</div>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">远光灯</span>
+                <div class="record-item-body-content">LED</div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">日间行车灯</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">日间行车灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-standard point-blod"></span>
                 </div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">自适应远近光</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+            </ul>
+          </div>
+
+          <div class="record-item" id="record-item-2">
+            <div class="record-item-title">
+              <span class="record-item-title-text">发动机</span>
+            </div>
+            <ul class="record-item-body">
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">进气形式</span>
+                <div class="record-item-body-content">涡轮增压</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">排量</span>
+                <div class="record-item-body-content">
+                  1.8
                 </div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">自动头灯</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">气缸数</span>
+                <div class="record-item-body-content">4</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">压缩比</span>
+                <div class="record-item-body-content">
+                 9:6
                 </div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">转向头灯</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+            </ul>
+          </div>
+
+          <div class="record-item" id="record-item-3">
+            <div class="record-item-title">
+              <span class="record-item-title-text">安全配置</span>
+              <div class="record-item-title-sub">
+                <b class="point-standard"></b>
+                标配
+                <b class="point-config"></b>
+                选配
+              </div>
+            </div>
+            <ul class="record-item-body">
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">近光灯</span>
+                <div class="record-item-body-content">LED</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">副驾驶安全气囊</span>
+                <div class="record-item-body-content">
+                  <span class="point-config point-blod"></span>
                 </div>
               </li>
-              <li class="list-item__body__row">
-                <span class="list-item__body__row__title">大灯高度可调</span>
-                <div class="list-item__body__row__content">
-                  <span class="list-item__body__row__content--standard"></span>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">主驾驶安全气囊</span>
+                <span class="point-config point-blod"></span>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">安全带未带提示</span>
+                <div class="record-item-body-content">
+                  <span class="point-standard point-blod"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="record-item" id="record-item-4">
+            <div class="record-item-title">
+              <span class="record-item-title-text">灯光配置</span>
+              <div class="record-item-title-sub">
+                <b class="point-standard"></b>
+                标配
+                <b class="point-config"></b>
+                选配
+              </div>
+            </div>
+            <ul class="record-item-body">
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">近光灯</span>
+                <div class="record-item-body-content">LED</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">车内氛围灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-config point-blod"></span>
+                </div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">远光灯</span>
+                <div class="record-item-body-content">LED</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">日间行车灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-standard point-blod"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="record-item" id="record-item-5">
+            <div class="record-item-title">
+              <span class="record-item-title-text">灯光配置</span>
+              <div class="record-item-title-sub">
+                <b class="point-standard"></b>
+                标配
+                <b class="point-config"></b>
+                选配
+              </div>
+            </div>
+            <ul class="record-item-body">
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">近光灯</span>
+                <div class="record-item-body-content">LED</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">车内氛围灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-config point-blod"></span>
+                </div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">远光灯</span>
+                <div class="record-item-body-content">LED</div>
+              </li>
+              <li class="record-item-body-row">
+                <span class="record-item-body-title">日间行车灯</span>
+                <div class="record-item-body-content">
+                  <span class="point-standard point-blod"></span>
                 </div>
               </li>
             </ul>
@@ -127,7 +238,6 @@
         </div>
       </section>
 
-      <footer>footer</footer>
     </div>
   </body>
 </html>

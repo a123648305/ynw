@@ -202,3 +202,18 @@ a:hover{
 .dn {
   display: none !important;
 }
+
+/*flex 相关*/
+.d-flex{
+  display: flex;
+}
+.d-flex-right{
+  margin-left: auto;
+}
+.d-flex-column{
+  flex-direction: column;
+}
+.d-flex-center{
+  justify-content: center;
+  align-items: center;
+}
