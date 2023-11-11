@@ -1,0 +1,213 @@
+<!-- compared page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>查询页面</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link
+            rel="stylesheet"
+            href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
+    />
+    <!-- bootstrap && jq-->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery-1.9.1.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- 页面js -->
+    <!--    <script src="./js/detail.js"></script>-->
+</head>
+<body>
+    <div class="ynw-search">
+        <header class="ynw-search-header">
+            <div class="title">一牛网</div>
+            <ul class="ad">
+               <li>此处为滚动广告1</li>
+                <li>此处为滚动广告2</li>
+                <li>此处为滚动广告3</li>
+                <li>此处为滚动广告4</li>
+            </ul>
+        </header>
+        <div class="ynw-search-form">
+            <div class="d-flex d-flex-center">
+                <input type="text" placeholder="请输入" id="keyword" class="form-control"/>
+                <span class="keyword-text">搜索</span>
+                <i class="iconfont icon-tishi"></i>
+            </div>
+            <div class="selector">
+                <div class="search-drown-item search-active">
+                    <span >综合排序</span>
+                    <i class="iconfont icon-tishi"></i>
+                </div>
+                <div class="search-drown-item search-active" >
+                    <span >品牌</span>
+                    <i class="iconfont icon-tishi" ></i>
+                </div>
+                <div class="search-drown-item" >
+                    <span >子分类</span>
+                    <i class="iconfont icon-tishi" ></i>
+                </div>
+                <div class="search-drown-item search-active" >
+                    <span >筛选</span>
+                    <i class="iconfont icon-tishi" ></i>
+                </div>
+            </div>
+
+            <div class="filter-tags" >
+                <div class="filter-tags-box" >
+                    <div class="filter-tags-item" >
+                        <span >AITO</span>
+                        <i class="iconfont icon-tishi" ></i>
+                    </div>
+                    <div class="filter-tags-item" >
+                        <span >奥迪</span>
+                        <i class="iconfont icon-tishi" ></i>
+                    </div>
+                    <div class="filter-tags-item" >
+                        <span >奥迪A5</span>
+                        <i class="iconfont icon-tishi" ></i>
+                    </div>
+                    <div class="filter-tags-clear" >
+                        <i class="iconfont icon-tishi" ></i>
+                        <span >清空</span>
+                    </div>
+                </div>
+            </div>
+
+<!--            推荐指数-->
+            <div class="recommend">
+                <div class="float-left">
+                    <img src="./img/product1.webp" alt="recommend" class="car-img">
+                    <span class="car-name">奥迪A5</span>
+                </div>
+                <div class="float-right">
+                    <span>推荐指数：<strong>8.3</strong></span>
+                    <i class="icon icon-tishi"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--        没有结果-->
+        <div class="ynw-search-result-empty mt-2">
+            <img src="./img/empty.png" alt="empty" />
+            <p>暂时没有符合条件的车源</p>
+        </div>
+
+
+<!--        搜索结果-->
+        <div class="ynw-search-result mt-2">
+            <div class="title">相关车源</div>
+            <div class="result-list">
+                <div class="result-item d-flex mb-2">
+                    <div class="result-left">
+                        <img src="./img/product1.webp" alt="result">
+                    </div>
+                    <div class="result-right">
+                        <div class="product-item-label">
+                            <span class="tag"></span>
+                            大众探岳GET 2020款 1.4123123123123
+                        </div>
+                        <div class="product-item-other">
+                            <span>2021年</span>
+                            <span>6.95万公里</span>
+                        </div>
+                        <div class="product-item-tags">
+                            <span>低损耗</span>
+                            <span>后备箱大</span>
+                            <span>顶配</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-item d-flex mb-2">
+                    <div class="result-left">
+                        <img src="./img/product1.webp" alt="result">
+                    </div>
+                    <div class="result-right">
+                        <div class="product-item-label">
+                            <span class="tag"></span>
+                            大众探岳GET 2020款 1.4123123123123
+                        </div>
+                        <div class="product-item-other">
+                            <span>2021年</span>
+                            <span>6.95万公里</span>
+                        </div>
+                        <div class="product-item-tags">
+                            <span>低损耗</span>
+                            <span>后备箱大</span>
+                            <span>顶配</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-item d-flex mb-2">
+                    <div class="result-left">
+                        <img src="./img/product1.webp" alt="result">
+                    </div>
+                    <div class="result-right">
+                        <div class="product-item-label">
+                            <span class="tag"></span>
+                            大众探岳GET 2020款 1.4123123123123
+                        </div>
+                        <div class="product-item-other">
+                            <span>2021年</span>
+                            <span>6.95万公里</span>
+                        </div>
+                        <div class="product-item-tags">
+                            <span>低损耗</span>
+                            <span>后备箱大</span>
+                            <span>顶配</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-item d-flex mb-2">
+                    <div class="result-left">
+                        <img src="./img/product1.webp" alt="result">
+                    </div>
+                    <div class="result-right">
+                        <div class="product-item-label">
+                            <span class="tag"></span>
+                            大众探岳GET 2020款 1.4123123123123
+                        </div>
+                        <div class="product-item-other">
+                            <span>2021年</span>
+                            <span>6.95万公里</span>
+                        </div>
+                        <div class="product-item-tags">
+                            <span>低损耗</span>
+                            <span>后备箱大</span>
+                            <span>顶配</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-item d-flex mb-2">
+                    <div class="result-left">
+                        <img src="./img/product1.webp" alt="result">
+                    </div>
+                    <div class="result-right">
+                        <div class="product-item-label">
+                            <span class="tag"></span>
+                            大众探岳GET 2020款 1.4123123123123
+                        </div>
+                        <div class="product-item-other">
+                            <span>2021年</span>
+                            <span>6.95万公里</span>
+                        </div>
+                        <div class="product-item-tags">
+                            <span>低损耗</span>
+                            <span>后备箱大</span>
+                            <span>顶配</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
