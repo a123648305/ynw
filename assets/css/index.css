@@ -58,23 +58,28 @@
   color: #111e36;
   font-size: 16px;
 }
+.ynw-home-nav .active_nav {
+  position: relative;
+}
+
 
 .ynw-home-nav .active_nav a {
   font-size: 20px;
   font-weight: 700;
   color: #111e36;
+
 }
 
 .ynw-home-nav .active_nav::after {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: -10px;
   left: 50%;
-  width: 16px;
-  height: 7px;
-  margin-left: -8px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
   background: url("/img/logo.png") no-repeat 50%/100%;
-  border-radius: 5px;
+  border: 1px solid red;
 }
 
 .ynw-home-nav > .icon-xinzengdaohangliebiao {
@@ -183,11 +188,14 @@
   margin: 14px 16px 0 16px;
   box-shadow: 0 5px 20px 0 rgba(17,30,54,.08);
 }
-
+.ynw-home-heat-wrap{
+  overflow: hidden;
+}
 .ynw-home-heat .ynw-home-heat-head {
   white-space: nowrap;
-  overflow: auto;
   padding: 0 10px;
+  transition: all 0.3s ease;
+  transform: translateX(0);
 }
 
 .ynw-home-heat .ynw-home-heat-head::-webkit-scrollbar {
