@@ -2,7 +2,22 @@ $(function (){
     console.log('cccccc',)
     initFormSearch()
     brandInit()
+    adScroll()
 })
+
+function adScroll(){
+    var adDom =$('#ad')
+    var maxHeight=$(adDom).children().length * $(adDom).height()
+    setInterval(function () {
+        var curTop=Math.abs($(ad).offset().top)+$(adDom).height()
+        if(curTop>=maxHeight){
+             $(ad).css('transition','all 0s ease 0s').css('transform','translateY(0)')
+        }else{
+            $(ad).css('transition','all 0.5s ease 0s').css('transform','translateY(-'+curTop+'px)')
+        }
+    },2000)
+}
+
 
 function initFormSearch(){
     var dorpdom =$('#ynw-dropdown')

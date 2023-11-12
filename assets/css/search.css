@@ -15,12 +15,19 @@
     font-weight: 700;
     font-size: 20px;
 }
-.ynw-search .ynw-search-header>.ad{
+.ynw-search .ynw-search-header .ad{
     flex: 1;
     text-align: center;
-    /*transition: adAnimation ;*/
-    animation: 30s ease adAnimation;
-
+    transition: all 0.5s ease 0s;
+    transform: translateY(0);
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.ynw-search .ynw-search-header>.ad li{
+    height: 40px;
+    line-height: 40px;
+    display: block;
 }
 
 @keyframes adAnimation {

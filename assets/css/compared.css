@@ -1,4 +1,8 @@
 .ynw-compared {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 .ynw-compared-header {
   height: 44px;
@@ -92,6 +96,18 @@
   color: #f9712c;
 }
 
+
+.ynw-compared-container{
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.ynw-compared-content{
+  flex: 1;
+  overflow: auto;
+}
+
 .ynw-compared-category {
   display: flex;
   justify-content: space-between;
@@ -154,7 +170,7 @@
   position: relative;
   font-size: 12px;
   color: #666;
-  line-height: 24px;
+  line-height: 16px;
   vertical-align: middle;
   min-height: 40px;
   border-bottom:1px solid #e6e6e6;
@@ -169,13 +185,18 @@
   position: relative;
   display: table-cell;
   vertical-align: top;
-  overflow: hidden;
+  overflow: auto;
+}
+.ynw-compared-details .differ-main::-webkit-scrollbar{
+  display: none;
 }
 .ynw-compared-details .differ-main .differ-main-item{
   display: table;
   min-height: 40px;
-  border-top: 1px solid #e6e6e6;
   border-bottom:1px solid #e6e6e6;
+}
+.ynw-compared-details .differ-main .differ-main-item:first-child{
+  border-top: 1px solid #e6e6e6;
 }
 
 .ynw-compared-details .differ-main .differ-main-item .inner {
@@ -183,12 +204,12 @@
   display: table-cell;
   box-sizing: border-box;
   min-width: 110px;
-  padding-left: 10px;
+  padding: 4px 4px 4px 10px;
   font-size: 12px;
   color: #666;
   border-right: 1px solid #e6e6e6;
   vertical-align: middle;
-  line-height: 30px;
+  line-height: 16px;
   background-color: rgba(40,115,255,.1);
 }
 .ynw-compared-details .differ-main .differ-main-item .empty{
