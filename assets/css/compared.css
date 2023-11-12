@@ -40,27 +40,42 @@
   vertical-align: middle;
 }
 
-.ynw-compared-console .left {
+.ynw-compared-console .console-left {
   display: table-cell;
-  width: 140px;
+  width: 84px;
   vertical-align: middle;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
 }
 
-.ynw-compared-console .main {
+.ynw-compared-console .console-main {
   display: flex;
+  overflow: auto;
+}
+.ynw-compared-console .console-main::-webkit-scrollbar{
+  display: none;
 }
 
 .ynw-compared-console .card-item {
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(27,27,27,.1);
     padding: 6px;
-    margin:10px 4px;
+    margin:6px 4px;
+    min-width: 100px;
+}
+.ynw-compared-console .empty-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ynw-compared-console .empty-plus .iconfont{
+  font-size: 30px;
+  color: #ccc;
 }
 
 .ynw-compared-console .card-item .title {
-  height: 48px;
-  margin: 12px 4px 0 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #333;
   white-space: normal;
@@ -68,10 +83,11 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-bottom: 6px;
 }
 
 .ynw-compared-console .card-item .price {
-  margin: 6px 4px 0 4px;
+  margin: 0;
   font-size: 14px;
   color: #f9712c;
 }
@@ -120,4 +136,61 @@
   vertical-align: middle;
   background-color: #666;
   margin: 0 6px;
+}
+
+.ynw-compared-details{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.ynw-compared-details .differ-left{
+  width: 84px;
+  background-color: #f8f8f8;
+  color: #666;
+  display: table-cell;
+}
+.ynw-compared-details .differ-left .differ-left-item{
+  padding:8px 6px;
+  position: relative;
+  font-size: 12px;
+  color: #666;
+  line-height: 24px;
+  vertical-align: middle;
+  min-height: 40px;
+  border-bottom:1px solid #e6e6e6;
+}
+.ynw-compared-details .differ-left .differ-left-item a{
+  color: #666665;
+  text-decoration: underline
+}
+
+
+.ynw-compared-details .differ-main{
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  overflow: hidden;
+}
+.ynw-compared-details .differ-main .differ-main-item{
+  display: table;
+  min-height: 40px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom:1px solid #e6e6e6;
+}
+
+.ynw-compared-details .differ-main .differ-main-item .inner {
+  position: relative;
+  display: table-cell;
+  box-sizing: border-box;
+  min-width: 110px;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #666;
+  border-right: 1px solid #e6e6e6;
+  vertical-align: middle;
+  line-height: 30px;
+  background-color: rgba(40,115,255,.1);
+}
+.ynw-compared-details .differ-main .differ-main-item .empty{
+  background-color: #fff;
 }
