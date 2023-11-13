@@ -7,7 +7,7 @@
 .ynw-search .ynw-search-header{
     display: flex;
     overflow: hidden;
-    height: 40px;
+    height: 30px;
 }
 .ynw-search .ynw-search-header>.title{
     width: 120px;
@@ -20,17 +20,17 @@
     text-align: center;
     transition: all 0.5s ease 0s;
     transform: translateY(0);
-    height: 40px;
+    height: 30px;
     display: flex;
     flex-direction: column;
 }
 .ynw-search .ynw-search-header>.ad li{
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     display: block;
 }
 
-@keyframes adAnimation {
+/* @keyframes adAnimation {
     0% {
         transform: translateY(-40px);
     }
@@ -43,7 +43,7 @@
     75% {
         transform: translateY(-160px);
     }
-}
+} */
 
 .ynw-search .ynw-search-form{
     margin-top: 10px;
@@ -58,12 +58,26 @@
     position: absolute;
     right: 40px;
 }
-
+.ynw-search .ynw-search-form .iconfont {
+    font-size: 20px;
+    color: #303741;
+}
 
 .ynw-search-form .selector {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    font-size: 14px;
+}
+
+.ynw-search-form .selector .search-drown-item{
+    display: flex;
+    align-items: center;
+}
+
+.ynw-search-form .selector .search-drown-item>.iconfont{
+    font-size: 12px;
+    color: inherit;
 }
 
 .ynw-search .ynw-search-form .search-active{
@@ -94,6 +108,7 @@
 }
 .ynw-search .ynw-search-form .filter-tags .filter-tags-item .iconfont{
     margin-left: 6px;
+    font-size: inherit;
 }
 
 
@@ -104,7 +119,8 @@
     align-items: center;
 }
 .ynw-search .ynw-search-form .filter-tags-clear .iconfont{
-    margin-right: 6px;
+    margin-right: 2px;
+    font-size: inherit;
 }
 
 .ynw-search .ynw-search-form .recommend {
@@ -126,6 +142,11 @@
 }
 .ynw-search .ynw-search-form .recommend strong{
     color: #1c7430;
+}
+.ynw-search .ynw-search-form .recommend .iconfont{
+    color: #303741;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 
@@ -257,7 +278,9 @@
 }
 .ynw-search .ynw-brand-modal .me-popup-header .iconfont{
     float: left;
-    font-size: 20px;
+    font-size: 24px;
+    margin-left: 4px;
+    margin-top: 6px;
 }
 
 .ynw-search .ynw-brand-modal .me-brand {

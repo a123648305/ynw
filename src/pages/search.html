@@ -8,10 +8,7 @@
     <title>查询页面</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/search.css" />
-    <link
-      rel="stylesheet"
-      href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
-    />
+    <link rel="stylesheet" href="./font/iconfont.css" />
     <!-- bootstrap && jq -->
     <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="./lib/jquery-1.9.1.min.js"></script>
@@ -39,24 +36,24 @@
             class="form-control"
           />
           <span class="keyword-text">搜索</span>
-          <i class="iconfont icon-tishi"></i>
+          <i class="iconfont icon-foot100" onclick="window.location='compared.html'"></i>
         </div>
         <div class="selector">
-          <div class="search-drown-item search-active" id="sortBtn">
+          <div class="search-drown-item" id="sortBtn">
             <span>综合排序</span>
-            <i class="iconfont icon-tishi"></i>
+            <i class="iconfont icon-xiala"></i>
           </div>
           <div class="search-drown-item" id="brandBtn">
             <span>品牌</span>
-            <i class="iconfont icon-tishi"></i>
+            <i class="iconfont icon-xiala"></i>
           </div>
           <div class="search-drown-item" id="sortBtn1">
             <span>子分类</span>
-            <i class="iconfont icon-tishi"></i>
+            <i class="iconfont icon-xiala"></i>
           </div>
           <div class="search-drown-item search-active">
             <span>筛选</span>
-            <i class="iconfont icon-tishi"></i>
+            <i class="iconfont icon-xiala"></i>
           </div>
         </div>
 
@@ -64,18 +61,18 @@
           <div class="filter-tags-box">
             <div class="filter-tags-item">
               <span>AITO</span>
-              <i class="iconfont icon-tishi"></i>
+              <i class="iconfont icon-shanchu" onclick="tagClear(e)"></i>
             </div>
             <div class="filter-tags-item">
               <span>奥迪</span>
-              <i class="iconfont icon-tishi"></i>
+              <i class="iconfont icon-shanchu" onclick="tagClear(e)"></i>
             </div>
             <div class="filter-tags-item">
               <span>奥迪A5</span>
-              <i class="iconfont icon-tishi"></i>
+              <i class="iconfont icon-shanchu" onclick="tagClear(e)"></i>
             </div>
-            <div class="filter-tags-clear">
-              <i class="iconfont icon-tishi"></i>
+            <div class="filter-tags-clear" onclick="tagClear()">
+              <i class="iconfont icon-shanchu1"></i>
               <span>清空</span>
             </div>
           </div>
@@ -89,7 +86,7 @@
           </div>
           <div class="float-right">
             <span>推荐指数：<strong>8.3</strong></span>
-            <i class="icon icon-tishi"></i>
+            <i class="iconfont icon-qianjin"></i>
           </div>
         </div>
       </div>
@@ -103,8 +100,8 @@
       <!-- 搜索结果-->
       <div class="ynw-search-result mt-2">
         <div class="title">相关车源</div>
-        <div class="result-list">
-          <div class="result-item d-flex mb-2">
+        <div class="result-list" id="resultlist">
+          <div class="result-item d-flex mb-2" onclick="resultClcik()">
             <div class="result-left">
               <img src="./img/product1.webp" alt="result" />
             </div>
@@ -125,7 +122,7 @@
             </div>
           </div>
 
-          <div class="result-item d-flex mb-2">
+          <div class="result-item d-flex mb-2" onclick="resultClcik()">
             <div class="result-left">
               <img src="./img/product1.webp" alt="result" />
             </div>
@@ -146,7 +143,7 @@
             </div>
           </div>
 
-          <div class="result-item d-flex mb-2">
+          <div class="result-item d-flex mb-2" onclick="resultClcik()">
             <div class="result-left">
               <img src="./img/product1.webp" alt="result" />
             </div>
@@ -167,7 +164,7 @@
             </div>
           </div>
 
-          <div class="result-item d-flex mb-2">
+          <div class="result-item d-flex mb-2" onclick="resultClcik()">
             <div class="result-left">
               <img src="./img/product1.webp" alt="result" />
             </div>
@@ -188,7 +185,7 @@
             </div>
           </div>
 
-          <div class="result-item d-flex mb-2">
+          <div class="result-item d-flex mb-2" onclick="resultClcik()">
             <div class="result-left">
               <img src="./img/product1.webp" alt="result" />
             </div>
@@ -225,7 +222,7 @@
       <div class="ynw-brand-modal" id="ynw-brand-modal">
         <div class="choosed-brand">选中的品牌</div>
         <div class="me-popup-header me-popup-header-center">
-          <i class="iconfont icon-tishi" tabindex="0" id="brand-close-btn"></i>
+          <i class="iconfont icon-shanchu" tabindex="0" id="brand-close-btn"></i>
           品牌车系
         </div>
         <div class="me-brand">

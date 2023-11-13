@@ -2,10 +2,10 @@ $(function (){
     console.log('cccccc',)
     initFormSearch()
     brandInit()
-    adScroll()
+    adScrollInit()
 })
 
-function adScroll(){
+function adScrollInit(){
     var adDom =$('#ad')
     var maxHeight=$(adDom).children().length * $(adDom).height()
     setInterval(function () {
@@ -21,14 +21,19 @@ function adScroll(){
 
 function initFormSearch(){
     var dorpdom =$('#ynw-dropdown')
+    var dropDownItem=$('#ynw-dropdown .ynw-dropdown-item')
     $('.ynw-search-form #sortBtn').on('click',function (e) {
-        console.log(123)
         var top = $(this).offset().top+$(this).height() + 'px'
         $(dorpdom).css('top',top).toggle()
     })
 
     $(dorpdom).on('click',function () {
         $(this).toggle()
+    })
+
+    $(dropDownItem).on('click',function(e){
+        $('.ynw-search-form #sortBtn>span').text($(this).text()).addClass('search-active')
+        $('.ynw-search-form #sortBtn').addClass('search-active')
     })
 }
 
@@ -79,4 +84,18 @@ function brandInit(){
         console.log(e,'点击了品牌')
         toggleScendBrand()
     })
+}
+
+
+// 列表点击
+function resultClcik(){
+    window.location='/detail.html?id=1'
+}
+
+// tag 操作
+function tagClear(e){
+    // var tagBtn=$('#clearTagsBtn')
+    // tagBtn.on('click',)
+    $(".filter-tags").remove()
+    console.log('eee',e)
 }

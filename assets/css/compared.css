@@ -67,6 +67,7 @@
     padding: 6px;
     margin:6px 4px;
     min-width: 100px;
+    position: relative;
 }
 .ynw-compared-console .empty-plus{
     display: flex;
@@ -94,6 +95,21 @@
   margin: 0;
   font-size: 14px;
   color: #f9712c;
+}
+
+
+.ynw-compared-console .card-item .icon-bianji {
+    font-size: 16px;
+    color: #666;
+    float: right;
+    margin-top: 4px;
+}
+
+.ynw-compared-console .card-item  .icon-guanbi{
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    color: #666;
 }
 
 

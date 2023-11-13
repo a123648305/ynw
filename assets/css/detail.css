@@ -65,7 +65,7 @@
   overflow: auto;
 }
 
-.ynw-detail-base{
+.ynw-detail-base {
   border-radius: 6px;
   margin: 12px 8px;
   background-color: #ffffff;
@@ -75,25 +75,25 @@
 .ynw-detail-base .price {
   color: #ff3600;
 }
-.ynw-detail-base .price  .price-text{
+.ynw-detail-base .price .price-text {
   font-size: 30px;
   font-weight: bold;
   line-height: 40px;
 }
-.ynw-detail-base .price  .price-sigle{
+.ynw-detail-base .price .price-sigle {
   font-size: 20px;
 }
-.ynw-detail-base .price  .price-new{
+.ynw-detail-base .price .price-new {
   font-size: 14px;
   color: #5f6670;
 }
-.ynw-detail-base .recent{
+.ynw-detail-base .recent {
   font-size: 14px;
   color: #5f6670;
   margin-bottom: 6px;
 }
 
-.ynw-detail-base .price-method{
+.ynw-detail-base .price-method {
   display: flex;
   justify-content: space-between;
   background-color: #fbefe2;
@@ -101,7 +101,7 @@
   padding: 4px 6px;
   font-size: 14px;
   align-items: center;
-  color:darkorange;
+  color: darkorange;
 }
 
 .ynw-detail-base .product-name {
@@ -111,30 +111,30 @@
 }
 
 .ynw-detail-base .product-tags {
-    margin: 6px 0;
-    display: flex;
+  margin: 6px 0;
+  display: flex;
 }
-.ynw-detail-base .product-tags .product-tags-list .product-tags-item{
+.ynw-detail-base .product-tags .product-tags-list .product-tags-item {
   background-color: #f5f7fa;
   padding: 2px 4px;
   margin-right: 4px;
   font-size: 12px;
 }
-.ynw-detail-base .product-tags .iconfont{
+.ynw-detail-base .product-tags .iconfont {
   margin-left: auto;
 }
 
-.ynw-detail-base .price-im{
+.ynw-detail-base .price-im {
   display: flex;
   background-color: #f5f7fa;
   padding: 6px 10px;
   align-items: center;
 }
-.ynw-detail-base .price-im .im-icon{
+.ynw-detail-base .price-im .im-icon {
   width: 20px;
   height: 20px;
 }
-.ynw-detail-base .price-im  .im-text {
+.ynw-detail-base .price-im .im-text {
   margin-left: 10px;
   margin-bottom: 0;
   flex: 1;
@@ -147,10 +147,10 @@
   border-radius: 4px;
 }
 
-.ynw-detail-base .base-info-action{
+.ynw-detail-base .base-info-action {
   display: flex;
 }
-.ynw-detail-base .base-info-action .base-info-action-item{
+.ynw-detail-base .base-info-action .base-info-action-item {
   color: #5f6670;
   padding: 4px 6px;
   font-size: 14px;
@@ -160,32 +160,31 @@
   display: flex;
   align-items: center;
 }
-.ynw-detail-base .base-info-action .base-info-action-item:nth-child(1){
+.ynw-detail-base .base-info-action .base-info-action-item:nth-child(1) {
   margin-right: 10px;
 }
 
-.ynw-detail-base .base-info-action .base-info-action-item img{
+.ynw-detail-base .base-info-action .base-info-action-item img {
   width: 18px;
   height: 18px;
   margin-right: 8px;
 }
 
-.ynw-detail-base .base-info-action .base-info-action-item .iconfont{
+.ynw-detail-base .base-info-action .base-info-action-item .iconfont {
   margin-left: auto;
 }
-
 
 .ynw-detail-base .info-list {
   margin-top: 10px;
 }
 
-.ynw-detail-base .info-list .info-list-item{
+.ynw-detail-base .info-list .info-list-item {
   display: flex;
   align-items: center;
   overflow: hidden;
   margin-bottom: 10px;
 }
-.ynw-detail-base .info-list .info-list-item .item-label{
+.ynw-detail-base .info-list .info-list-item .item-label {
   font-size: 16px;
   width: 40px;
   font-weight: 600;
@@ -198,7 +197,7 @@
   padding-right: 10px;
   overflow: hidden;
 }
-.ynw-detail-base .info-list .info-list-item .item-value .content{
+.ynw-detail-base .info-list .info-list-item .item-value .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,7 +213,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.ynw-detail-base .info-list .item-value img{
+.ynw-detail-base .info-list .item-value img {
   width: 30px;
   height: 30px;
 }
@@ -228,18 +227,17 @@
   max-width: 96%;
 }
 
-
 /*大家都在看*/
-.ynw-detail .ynw-detail-watch{
+.ynw-detail .ynw-detail-watch {
   border-radius: 6px;
   margin: 0 8px;
   background-color: #ffffff;
   padding: 14px 10px;
 }
-.ynw-detail .ynw-detail-watch .title>p{
+.ynw-detail .ynw-detail-watch .title > p {
   font-size: 20px;
 }
-.ynw-detail .ynw-detail-watch .title>span{
+.ynw-detail .ynw-detail-watch .title > span {
   background-color: #1c7430;
   display: block;
   width: 16px;
@@ -247,21 +245,21 @@
   margin-left: 40px;
 }
 
-.ynw-detail .ynw-detail-watch .product{
+.ynw-detail .ynw-detail-watch .product {
   margin-top: 20px;
   display: flex;
   overflow: auto;
 }
-.ynw-detail .ynw-detail-watch .product::-webkit-scrollbar{
+.ynw-detail .ynw-detail-watch .product::-webkit-scrollbar {
   display: none;
 }
-.ynw-detail .ynw-detail-watch  .product-item {
+.ynw-detail .ynw-detail-watch .product-item {
   border-radius: 6px;
   border: 1px solid #d8dde6;
   width: 140px;
   margin-right: 10px;
 }
-.ynw-detail .ynw-detail-watch  .product-item>img{
+.ynw-detail .ynw-detail-watch .product-item > img {
   width: 140px;
   height: 80px;
   border-top-left-radius: 6px;
@@ -276,9 +274,9 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding:0 6px;
+  padding: 0 6px;
 }
-.ynw-detail .ynw-detail-watch .product-item-label .tag{
+.ynw-detail .ynw-detail-watch .product-item-label .tag {
   background: url("../img/11.png") no-repeat;
   width: 30px;
   height: 14px;
@@ -292,38 +290,37 @@
   color: #8f96a0;
   font-weight: 400;
   font-size: 12px;
-  padding:0 6px;
+  padding: 0 6px;
 }
 .ynw-detail .ynw-detail-watch .product-item-other span:not(:last-child)::after {
   display: inline-block;
   content: "|";
   color: #d8dde6;
-  margin:  0 6px;
+  margin: 0 6px;
 }
 
 .ynw-detail .ynw-detail-watch .product-item-price {
   color: #ff4d18;
   font-size: 12px;
-  padding:0 6px 6px 6px;
+  padding: 0 6px 6px 6px;
 }
-.ynw-detail .ynw-detail-watch .product-item-price .money{
+.ynw-detail .ynw-detail-watch .product-item-price .money {
   font-size: 16px;
 }
-.ynw-detail .ynw-detail-watch .product-item-price .money::after{
+.ynw-detail .ynw-detail-watch .product-item-price .money::after {
   font-size: 12px;
-  content: '万';
+  content: "万";
 }
 
-
 /*比价列表*/
-.ynw-detail .ynw-detail-list{
+.ynw-detail .ynw-detail-list {
   margin: 8px;
   border-radius: 6px;
 }
 /*.ynw-detail .ynw-detail-list .ynw-detail-list-group{*/
 /*  border: 1px solid red;*/
 /*}*/
-.ynw-detail .ynw-detail-list  .summary-title {
+.ynw-detail .ynw-detail-list .summary-title {
   padding: 0 20px;
   font-size: 14px;
   font-weight: 700;
@@ -336,18 +333,16 @@
   font-weight: 300;
   color: #666d7f;
   line-height: 30px;
-  background-image: linear-gradient(90deg,#f8f9fc,#fff);
+  background-image: linear-gradient(90deg, #f8f9fc, #fff);
 }
 
-
-.ynw-detail .ynw-detail-list .ynw-detail-list-item li{
+.ynw-detail .ynw-detail-list .ynw-detail-list-item li {
   border-bottom: 1px solid #d8dde6;
   padding: 6px;
 }
-.ynw-detail .ynw-detail-list .ynw-detail-list-item li:last-child{
+.ynw-detail .ynw-detail-list .ynw-detail-list-item li:last-child {
   border: none;
 }
-
 
 .ynw-detail .ynw-detail-list-item .caption {
   padding-right: 40px;
@@ -361,21 +356,21 @@
   max-width: 80%;
 }
 
-.ynw-detail .ynw-detail-list-item .caption-price{
+.ynw-detail .ynw-detail-list-item .caption-price {
   font-size: 12px;
   color: #f60;
   margin-left: auto;
 }
-.ynw-detail .ynw-detail-list-item .caption-price strong{
+.ynw-detail .ynw-detail-list-item .caption-price strong {
   font-size: 18px;
 }
 
 .ynw-detail .ynw-detail-list-item .choose {
- color: #666d7f;
+  color: #666d7f;
   flex: 1;
   font-size: 12px;
 }
-.ynw-detail .ynw-detail-list-item .choose strong{
+.ynw-detail .ynw-detail-list-item .choose strong {
   color: #05f;
 }
 
@@ -385,17 +380,22 @@
   color: #666d7f;
   text-align: right;
 }
-.ynw-detail .ynw-detail-list-item .factory strong{
+.ynw-detail .ynw-detail-list-item .factory strong {
   font-size: 14px;
   color: #0c8;
 }
 
-.ynw-detail .ynw-detail-list-item .pk{
-    color: #05f;
-    margin-left: auto;
+.ynw-detail .ynw-detail-list-item .pk {
+  color: #05f;
+  margin-left: auto;
   border: 1px solid #05f;
   border-radius: 4px;
-  padding: 4px 40px;
+  padding: 4px 20px;
   margin-top: 10px;
   letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.ynw-detail .ynw-detail-list-item .pk .iconfont {
+  font-size: 18px;
 }

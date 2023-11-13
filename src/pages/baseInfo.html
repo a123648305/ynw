@@ -8,10 +8,7 @@
     <title>车辆信息</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/baseInfo.css" />
-    <link
-      rel="stylesheet"
-      href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
-    />
+    <link rel="stylesheet" href="./font/iconfont.css" />
     <!-- bootstrap && jq-->
     <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="./lib/jquery-1.9.1.min.js"></script>
@@ -22,7 +19,7 @@
   <body>
     <div class="ynw-baseInfo">
       <header class="ynw-baseInfo-header shadow-sm">
-        <div class="ynw-baseInfo-header-left">
+        <div class="ynw-baseInfo-header-left" onclick="history.go(-1)">
           <i class="iconfont icon-houtui"></i>
         </div>
         <div class="ynw-baseInfo-header-mid">
@@ -31,7 +28,7 @@
               <div class="tab-Name">车辆信息</div>
               <div class="bottom-active"></div>
             </div>
-            <div class="header-title-item">
+            <div class="header-title-item" onclick="window.location='configureInfo.html'">
               <div class="tab-Name">配置参数</div>
             </div>
           </div>
