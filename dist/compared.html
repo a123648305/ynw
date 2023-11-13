@@ -1,0 +1,267 @@
+<!-- compared page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>对比页面</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/compared.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <!-- bootstrap && jq-->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery-1.9.1.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- 页面js -->
+    <script src="./js/compared.js"></script>
+  </head>
+  <body>
+    <div class="ynw-compared">
+      <header class="ynw-compared-header">
+        <div class="ynw-compared-header-left">
+          <i class="iconfont icon-houtui" onclick="window.history.go(-1)"></i>
+          <i class="iconfont icon-shouye" onclick="window.location='home.html'"></i>
+        </div>
+        <div class="ynw-compared-header-mid">
+          <h5>车型对比</h5>
+        </div>
+        <div class="ynw-compared-header-right">
+          <i class="iconfont icon-sousuo"></i>
+          <i class="iconfont icon-gengduo"></i>
+        </div>
+      </header>
+
+      <nav class="ynw-compared-nav">
+        <div class="ynw-compared-nav-title">参数对比</div>
+      </nav>
+
+      <!-- 比较内容详情 -->
+      <section class="ynw-compared-container">
+        <div class="ynw-compared-console">
+          <div class="console-left">
+            <div class="form-check pl-0 d-flex d-flex-center">
+              <input type="checkbox" id="hideCheck" class="mr-1" /> 隐藏相同
+            </div>
+          </div>
+          <div class="console-main">
+            <div class="card-item shadow">
+              <p class="title">AION S Plus 2023款 70 智驾</p>
+              <p class="price">16.58万</p>
+              <div class="card-bottom">
+                <i class="iconfont icon-shangyiye-01"></i>
+                <i class="iconfont icon-xiayiye-01"></i>
+                <i class="iconfont icon-bianji"></i>
+              </div>
+              <i class="iconfont icon-guanbi"></i>
+            </div>
+            <div class="card-item shadow">
+              <p class="title">AION S Plus 2023款 70 智驾</p>
+              <p class="price">16.58万</p>
+              <div class="card-bottom">
+                <i class="iconfont icon-shangyiye-01"></i>
+                <i class="iconfont icon-xiayiye-01"></i>
+                <i class="iconfont icon-bianji"></i>
+              </div>
+              <i class="iconfont icon-guanbi"></i>
+            </div>
+            <div class="card-item shadow empty-plus">
+              <i class="iconfont icon-add"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="ynw-compared-content">
+          <div class="ynw-compared-detail-item">
+            <div class="ynw-compared-category">
+              <div class="caption">基本参数</div>
+              <div class="direction">
+                <i class="mark-bp"></i>标配<i class="mark-xp"></i>选配<i
+                  class="mark-wu"
+                ></i
+                >无
+              </div>
+            </div>
+            <div class="ynw-compared-details">
+              <div class="differ-left">
+                <div class="differ-left-item">
+                  <!-- 本地参考底价(元)-->
+                  参考价
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">厂商</a>
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">级别</a>
+                </div>
+              </div>
+              <div class="differ-main">
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    广汽
+                    <!-- <i class="iconfont icon-tishi"></i> -->
+                  </div>
+                  <div class="inner">阿维塔科技</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">小型车</div>
+                  <div class="inner">中大型SUV</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    汽油
+                  </div>
+                  <div class="inner">纯电动</div>
+                  <div class="inner empty"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ynw-compared-detail-item">
+            <div class="ynw-compared-category">
+              <div class="caption">基本参数</div>
+              <div class="direction">
+                <i class="mark-bp"></i>标配<i class="mark-xp"></i>选配<i
+                  class="mark-wu"
+                ></i
+                >无
+              </div>
+            </div>
+            <div class="ynw-compared-details">
+              <div class="differ-left">
+                <div class="differ-left-item">
+                  <!-- 本地参考底价(元)-->
+                  参考价
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">厂商</a>
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">级别</a>
+                </div>
+              </div>
+              <div class="differ-main">
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    广汽
+                    <!-- <i class="iconfont icon-tishi"></i> -->
+                  </div>
+                  <div class="inner">阿维塔科技</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">小型车</div>
+                  <div class="inner">中大型SUV</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    汽油
+                  </div>
+                  <div class="inner">纯电动</div>
+                  <div class="inner empty"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ynw-compared-detail-item">
+            <div class="ynw-compared-category">
+              <div class="caption">基本参数</div>
+              <div class="direction">
+                <i class="mark-bp"></i>标配<i class="mark-xp"></i>选配<i
+                  class="mark-wu"
+                ></i
+                >无
+              </div>
+            </div>
+            <div class="ynw-compared-details">
+              <div class="differ-left">
+                <div class="differ-left-item">
+                  <!-- 本地参考底价(元)-->
+                  参考价
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">厂商</a>
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">级别</a>
+                </div>
+              </div>
+              <div class="differ-main">
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    广汽
+                    <!-- <i class="iconfont icon-tishi"></i> -->
+                  </div>
+                  <div class="inner">阿维塔科技</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">小型车</div>
+                  <div class="inner">中大型SUV</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    汽油
+                  </div>
+                  <div class="inner">纯电动</div>
+                  <div class="inner empty"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ynw-compared-detail-item">
+            <div class="ynw-compared-category">
+              <div class="caption">基本参数</div>
+              <div class="direction">
+                <i class="mark-bp"></i>标配<i class="mark-xp"></i>选配<i
+                  class="mark-wu"
+                ></i
+                >无
+              </div>
+            </div>
+            <div class="ynw-compared-details">
+              <div class="differ-left">
+                <div class="differ-left-item">
+                  <!-- 本地参考底价(元)-->
+                  参考价
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">厂商</a>
+                </div>
+                <div class="differ-left-item">
+                  <a href="./detail.html">级别</a>
+                </div>
+              </div>
+              <div class="differ-main">
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    广汽
+                    <!-- <i class="iconfont icon-tishi"></i> -->
+                  </div>
+                  <div class="inner">阿维塔科技</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">小型车</div>
+                  <div class="inner">中大型SUV</div>
+                  <div class="inner empty"></div>
+                </div>
+                <div class="differ-main-item highlight">
+                  <div class="inner">
+                    汽油
+                  </div>
+                  <div class="inner">纯电动</div>
+                  <div class="inner empty"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

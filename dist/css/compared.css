@@ -1,0 +1,233 @@
+.ynw-compared {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.ynw-compared-header {
+  height: 11.7vw;
+  display: flex;
+  align-items: center;
+}
+.ynw-compared-header-mid {
+  flex: 3;
+  text-align: center;
+}
+
+.ynw-compared-header-left,
+.ynw-compared-header-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ynw-compared .iconfont {
+  font-size: 5.9vw;
+}
+
+.ynw-compared-nav {
+  border-bottom: 2.7vw solid #eee;
+}
+
+.ynw-compared-nav-title {
+  border-bottom: 1px solid #2873ff;
+  color: #2873ff;
+  text-align: center;
+  font-size: 4.8vw;
+}
+
+.ynw-compared-console {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 22.4vw;
+  vertical-align: middle;
+}
+
+.ynw-compared-console .console-left {
+  display: table-cell;
+  width: 22.4vw;
+  vertical-align: middle;
+  font-size: 3.2vw;
+  color: #333;
+  text-align: center;
+}
+
+.ynw-compared-console .console-main {
+  display: flex;
+  overflow: auto;
+}
+.ynw-compared-console .console-main::-webkit-scrollbar{
+  display: none;
+}
+
+.ynw-compared-console .card-item {
+    border-radius: 1.6vw;
+    box-shadow: 0 1.1vw 2.7vw rgba(27,27,27,.1);
+    padding: 1.6vw;
+    margin:1.6vw 1.1vw;
+    min-width: 26.7vw;
+    position: relative;
+}
+.ynw-compared-console .empty-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ynw-compared-console .empty-plus .iconfont{
+  font-size: 8vw;
+  color: #ccc;
+}
+
+.ynw-compared-console .card-item .title {
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: #333;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 1.6vw;
+}
+
+.ynw-compared-console .card-item .price {
+  margin: 0;
+  font-size: 3.7vw;
+  color: #f9712c;
+}
+
+
+.ynw-compared-console .card-item .icon-bianji {
+    font-size: 4.3vw;
+    color: #666;
+    float: right;
+    margin-top: 1.1vw;
+}
+
+.ynw-compared-console .card-item  .icon-guanbi{
+    position: absolute;
+    top: -3.2vw;
+    right: -2.1vw;
+    color: #666;
+}
+
+
+.ynw-compared-container{
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.ynw-compared-content{
+  flex: 1;
+  overflow: auto;
+}
+
+.ynw-compared-category {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.7vw;
+  align-items: center;
+  border-top: 1px solid #eee;
+  line-height: 10.7vw;
+}
+
+.ynw-compared-category .caption {
+  width: 24vw;
+  font-size: 4.3vw;
+  font-weight: 700;
+  color: #333;
+  line-height: 5.3vw;
+}
+
+.ynw-compared-category .direction .mark-bp {
+  display: inline-block;
+  width: 2.1vw;
+  height: 2.1vw;
+  line-height: 0;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 0 1.6vw;
+}
+
+.ynw-compared-category .direction .mark-xp {
+  display: inline-block;
+  width: 2.1vw;
+  height: 2.1vw;
+  line-height: 0;
+  border: 1px solid #666;
+  border-radius: 50%;
+  margin: 0 1.6vw;
+}
+
+.ynw-compared-category .direction .mark-wu {
+  display: inline-block;
+  width: 2.7vw;
+  height: 1px;
+  vertical-align: middle;
+  background-color: #666;
+  margin: 0 1.6vw;
+}
+
+.ynw-compared-details{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.ynw-compared-details .differ-left{
+  width: 22.4vw;
+  background-color: #f8f8f8;
+  color: #666;
+  display: table-cell;
+}
+.ynw-compared-details .differ-left .differ-left-item{
+  padding:2.1vw 1.6vw;
+  position: relative;
+  font-size: 3.2vw;
+  color: #666;
+  line-height: 4.3vw;
+  vertical-align: middle;
+  min-height: 10.7vw;
+  border-bottom:1px solid #e6e6e6;
+}
+.ynw-compared-details .differ-left .differ-left-item a{
+  color: #666665;
+  text-decoration: underline
+}
+
+
+.ynw-compared-details .differ-main{
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+  overflow: auto;
+}
+.ynw-compared-details .differ-main::-webkit-scrollbar{
+  display: none;
+}
+.ynw-compared-details .differ-main .differ-main-item{
+  display: table;
+  min-height: 10.7vw;
+  border-bottom:1px solid #e6e6e6;
+}
+.ynw-compared-details .differ-main .differ-main-item:first-child{
+  border-top: 1px solid #e6e6e6;
+}
+
+.ynw-compared-details .differ-main .differ-main-item .inner {
+  position: relative;
+  display: table-cell;
+  box-sizing: border-box;
+  min-width: 29.3vw;
+  padding: 1.1vw 1.1vw 1.1vw 2.7vw;
+  font-size: 3.2vw;
+  color: #666;
+  border-right: 1px solid #e6e6e6;
+  vertical-align: middle;
+  line-height: 4.3vw;
+  background-color: rgba(40,115,255,.1);
+}
+.ynw-compared-details .differ-main .differ-main-item .empty{
+  background-color: #fff;
+}
