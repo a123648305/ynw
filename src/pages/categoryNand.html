@@ -1,7 +1,7 @@
 <!-- category page-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/categoryNand.css" />
     <link
-            rel="stylesheet"
-            href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
+      rel="stylesheet"
+      href="//at.alicdn.com/t/c/font_4321680_d0c9lnpgku.css"
     />
     <!-- bootstrap && jq-->
     <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -18,162 +18,194 @@
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- 页面js -->
     <script src="./js/category.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="ynw-category-nand-page">
-        <header class="ynw-category-nand-header">
-            <nav class="nav">
-                <a class="nav-link active" href="./category.html"><i class="iconfont icon-tishi"></i>托管型MAND</a>
-            </nav>
-        </header>
-        <div class="ynw-category-nand-total">
-            <h1>托管型MAND</h1>
+      <header class="ynw-category-nand-header">
+        <nav class="nav">
+          <a class="nav-link active" href="./category.html"
+            ><i class="iconfont icon-tishi"></i>托管型MAND</a
+          >
+        </nav>
+      </header>
+      <div class="ynw-category-nand-total">
+        <h1>托管型MAND</h1>
+      </div>
+
+      <!--        tab nav-->
+      <div id="tabsNav" class="ynw-category-nand-nav-tabs">
+        <i class="iconfont icon-tishi"></i>
+        <ul class="tabs-nav">
+          <li class="nav-item active">
+            <a id="liProductsLink" href="javascript:void('0');">
+              <i class="iconfont icon-tishi"></i>
+              <span class="tab-title">产品 </span
+              ><span class="tab-count-lbl">(2)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="liDatasheetsLink" href="#">
+              <i class="iconfont icon-tishi"></i>
+              <span class="tab-title">数据表</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="liImagesLink" href="#">
+              <i class="iconfont icon-tishi"></i>
+              <span class="tab-title">图片</span>
+            </a>
+          </li>
+          <li class="nav-item newest-prod-tab">
+            <a id="liNewestProdLink" href="/c/n">
+              <i class="iconfont icon-tishi"></i>
+              <span class="tab-title">新品速递</span>
+            </a>
+          </li>
+        </ul>
+        <i class="iconfont icon-tishi"></i>
+      </div>
+
+      <div class="ynw-category-nand-condition">
+        <div>结果：<strong>2</strong></div>
+      </div>
+
+      <!--        <form class="ynw-category-nand-form">-->
+      <!--            <div class="form-group">-->
+      <!--                <label for="keyword">筛选条件</label>-->
+      <!--                <select class="form-control form-control-sm" id="keyword" >-->
+      <!--                    <option value="">所有制造商</option>-->
+      <!--                    <option value="0xDA">0xDA (1)</option>-->
+      <!--                    <option value="1BitSquared">1BitSquared (10)</option>-->
+      <!--                    <option value="3M">3M (32,194)</option>-->
+      <!--                    <option value="4D Systems">4D Systems (581)</option>-->
+      <!--                </select>-->
+      <!--            </div>-->
+      <!--            <button type="submit" class="btn">确定</button>-->
+      <!--        </form>-->
+
+      <div class="ynw-category-nand-group">
+        <div class="ynw-category-nand-group-item">
+          <div class="category-product-name">
+            Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP
+          </div>
+          <img
+            src="./img/product1.webp"
+            alt="p1"
+            class="category-product-img"
+          />
+          <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
+          <div class="category-product-mfr">Greenliant</div>
+          <div class="category-product-price">
+            <span>1: </span>
+            <span class="text-nowrap">¥1,747.9405</span>
+          </div>
+          <div class="category-product-amount">
+            <span class="d-inline-block mr-1">104</span>库存量
+          </div>
+          <i class="iconfont icon-tishi category-product-btn"></i>
+        </div>
+        <div class="ynw-category-nand-group-item">
+          <div class="category-product-name">
+            Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP
+          </div>
+          <img
+            src="./img/product1.webp"
+            alt="p1"
+            class="category-product-img"
+          />
+          <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
+          <div class="category-product-mfr">Greenliant</div>
+          <div class="category-product-price">
+            <span>1: </span>
+            <span class="text-nowrap">¥1,747.9405</span>
+          </div>
+          <div class="category-product-amount">
+            <span class="d-inline-block mr-1">104</span>库存量
+          </div>
+          <i class="iconfont icon-tishi category-product-btn"></i>
+        </div>
+        <div class="ynw-category-nand-group-item">
+          <div class="category-product-name">
+            Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP
+          </div>
+          <img
+            src="./img/product1.webp"
+            alt="p1"
+            class="category-product-img"
+          />
+          <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
+          <div class="category-product-mfr">Greenliant</div>
+          <div class="category-product-price">
+            <span>1: </span>
+            <span class="text-nowrap">¥1,747.9405</span>
+          </div>
+          <div class="category-product-amount">
+            <span class="d-inline-block mr-1">104</span>库存量
+          </div>
+          <i class="iconfont icon-tishi category-product-btn"></i>
+        </div>
+        <div class="ynw-category-nand-group-item">
+          <div class="category-product-name">
+            Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP
+          </div>
+          <img
+            src="./img/product1.webp"
+            alt="p1"
+            class="category-product-img"
+          />
+          <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
+          <div class="category-product-mfr">Greenliant</div>
+          <div class="category-product-price">
+            <span>1: </span>
+            <span class="text-nowrap">¥1,747.9405</span>
+          </div>
+          <div class="category-product-amount">
+            <span class="d-inline-block mr-1">104</span>库存量
+          </div>
+          <i class="iconfont icon-tishi category-product-btn"></i>
+        </div>
+        <div class="ynw-category-nand-group-item">
+          <div class="category-product-name">
+            Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP
+          </div>
+          <img
+            src="./img/product1.webp"
+            alt="p1"
+            class="category-product-img"
+          />
+          <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
+          <div class="category-product-mfr">Greenliant</div>
+          <div class="category-product-price">
+            <span>1: </span>
+            <span class="text-nowrap">¥1,747.9405</span>
+          </div>
+          <div class="category-product-amount">
+            <span class="d-inline-block mr-1">104</span>库存量
+          </div>
+          <i class="iconfont icon-tishi category-product-btn"></i>
         </div>
 
-<!--        tab nav-->
-        <div id="tabsNav" class="ynw-category-nand-nav-tabs">
-            <i class="iconfont icon-tishi"></i>
-            <ul class="tabs-nav">
-                <li class="nav-item active">
-                    <a id="liProductsLink" href="javascript:void('0');">
-                        <i class="iconfont icon-tishi" ></i>
-                        <span class="tab-title">产品 </span><span class="tab-count-lbl">(2)</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a id="liDatasheetsLink" href="#">
-                        <i class="iconfont icon-tishi" ></i>
-                        <span class="tab-title">数据表</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a id="liImagesLink" href="#" >
-                        <i class="iconfont icon-tishi" ></i>
-                        <span class="tab-title">图片</span>
-                    </a>
-                </li>
-                <li class="nav-item newest-prod-tab ">
-                    <a id="liNewestProdLink" href="/c/n" >
-                        <i class="iconfont icon-tishi" ></i>
-                        <span class="tab-title">新品速递</span>
-                    </a>
-                </li>
-            </ul>
-            <i class="iconfont icon-tishi"></i>
-        </div>
-
-        <div class="ynw-category-nand-condition">
-            <div>结果：<strong>2</strong></div>
-        </div>
-
-
-<!--        <form class="ynw-category-nand-form">-->
-<!--            <div class="form-group">-->
-<!--                <label for="keyword">筛选条件</label>-->
-<!--                <select class="form-control form-control-sm" id="keyword" >-->
-<!--                    <option value="">所有制造商</option>-->
-<!--                    <option value="0xDA">0xDA (1)</option>-->
-<!--                    <option value="1BitSquared">1BitSquared (10)</option>-->
-<!--                    <option value="3M">3M (32,194)</option>-->
-<!--                    <option value="4D Systems">4D Systems (581)</option>-->
-<!--                </select>-->
-<!--            </div>-->
-<!--            <button type="submit" class="btn">确定</button>-->
-<!--        </form>-->
-
-        <div class="ynw-category-nand-group">
-            <div class="ynw-category-nand-group-item" >
-                <div class="category-product-name">Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP</div>
-                <img src="./img/product1.webp" alt="p1" class="category-product-img">
-                <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
-                <div class="category-product-mfr">Greenliant</div>
-                <div class="category-product-price">
-                    <span  >1: </span>
-                    <span class="text-nowrap">¥1,747.9405</span>
-                </div>
-                <div class="category-product-amount">
-                    <span class="d-inline-block mr-1">104</span>库存量
-                </div>
-                <i class="iconfont icon-tishi category-product-btn"></i>
-            </div>
-            <div class="ynw-category-nand-group-item" >
-                <div class="category-product-name">Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP</div>
-                <img src="./img/product1.webp" alt="p1" class="category-product-img">
-                <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
-                <div class="category-product-mfr">Greenliant</div>
-                <div class="category-product-price">
-                    <span  >1: </span>
-                    <span class="text-nowrap">¥1,747.9405</span>
-                </div>
-                <div class="category-product-amount">
-                    <span class="d-inline-block mr-1">104</span>库存量
-                </div>
-                <i class="iconfont icon-tishi category-product-btn"></i>
-            </div>
-            <div class="ynw-category-nand-group-item" >
-                <div class="category-product-name">Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP</div>
-                <img src="./img/product1.webp" alt="p1" class="category-product-img">
-                <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
-                <div class="category-product-mfr">Greenliant</div>
-                <div class="category-product-price">
-                    <span  >1: </span>
-                    <span class="text-nowrap">¥1,747.9405</span>
-                </div>
-                <div class="category-product-amount">
-                    <span class="d-inline-block mr-1">104</span>库存量
-                </div>
-                <i class="iconfont icon-tishi category-product-btn"></i>
-            </div>
-            <div class="ynw-category-nand-group-item" >
-                <div class="category-product-name">Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP</div>
-                <img src="./img/product1.webp" alt="p1" class="category-product-img">
-                <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
-                <div class="category-product-mfr">Greenliant</div>
-                <div class="category-product-price">
-                    <span  >1: </span>
-                    <span class="text-nowrap">¥1,747.9405</span>
-                </div>
-                <div class="category-product-amount">
-                    <span class="d-inline-block mr-1">104</span>库存量
-                </div>
-                <i class="iconfont icon-tishi category-product-btn"></i>
-            </div>
-            <div class="ynw-category-nand-group-item" >
-                <div class="category-product-name">Managed NAND 8GB SATA BGA 145b (SLC 60K) I-TEMP</div>
-                <img src="./img/product1.webp" alt="p1" class="category-product-img">
-                <div class="category-product-blue">GLS85LS1008P-S-I-FZJE-TT095</div>
-                <div class="category-product-mfr">Greenliant</div>
-                <div class="category-product-price">
-                    <span  >1: </span>
-                    <span class="text-nowrap">¥1,747.9405</span>
-                </div>
-                <div class="category-product-amount">
-                    <span class="d-inline-block mr-1">104</span>库存量
-                </div>
-                <i class="iconfont icon-tishi category-product-btn"></i>
-            </div>
-
-<!--            分页-->
-            <nav class="ynw-category-nand-navigation">
-                <ul class="pagination ">
-                    <li class="page-item ">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
+        <!-- 分页-->
+        <nav class="ynw-category-nand-navigation">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
