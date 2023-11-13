@@ -15,6 +15,10 @@
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- 页面js  -->
     <script src="./js/search.js"></script>
+    <script src="//cdn.bootcss.com/eruda/1.4.2/eruda.min.js"></script>
+    <script>
+      eruda.init();
+    </script>
   </head>
   <body>
     <div class="ynw-search">
@@ -36,7 +40,10 @@
             class="form-control"
           />
           <span class="keyword-text">搜索</span>
-          <i class="iconfont icon-foot100" onclick="window.location='compared.html'"></i>
+          <i
+            class="iconfont icon-foot100"
+            onclick="window.location='compared.html'"
+          ></i>
         </div>
         <div class="selector">
           <div class="search-drown-item" id="sortBtn">
@@ -222,7 +229,11 @@
       <div class="ynw-brand-modal" id="ynw-brand-modal">
         <div class="choosed-brand">选中的品牌</div>
         <div class="me-popup-header me-popup-header-center">
-          <i class="iconfont icon-shanchu" tabindex="0" id="brand-close-btn"></i>
+          <i
+            class="iconfont icon-shanchu"
+            tabindex="0"
+            id="brand-close-btn"
+          ></i>
           品牌车系
         </div>
         <div class="me-brand">

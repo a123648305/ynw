@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 10px;
+    padding:0 10px;
 }
 
 .ynw-search .ynw-search-header{
@@ -57,7 +57,7 @@
 .ynw-search .ynw-search-form .keyword-text{
     color:#19ac81;
     position: absolute;
-    right: 40px;
+    right: 60px;
 }
 .ynw-search .ynw-search-form .iconfont {
     font-size: 20px;

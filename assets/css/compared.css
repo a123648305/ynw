@@ -36,6 +36,11 @@
   font-size: 18px;
 }
 
+
+.ynw-compared-container{
+    padding: 10px;
+}
+
 .ynw-compared-console {
   display: table;
   table-layout: fixed;

@@ -36,6 +36,11 @@
   font-size: 4.8vw;
 }
 
+
+.ynw-compared-container{
+    padding: 2.7vw;
+}
+
 .ynw-compared-console {
   display: table;
   table-layout: fixed;
