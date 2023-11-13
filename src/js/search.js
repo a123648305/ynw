@@ -2,7 +2,7 @@ $(function () {
   console.log("cccccc");
   initFormSearch();
   brandInit();
-//   adScrollInit();
+  adScrollInit();
 });
 
 function adScrollInit() {
