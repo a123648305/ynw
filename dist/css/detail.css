@@ -238,7 +238,7 @@
   font-size: 5.3vw;
 }
 .ynw-detail .ynw-detail-watch .title > span {
-  background-color: #1c7430;
+  background-color: var(--primaryColor);
   display: block;
   width: 4.3vw;
   height: 1.1vw;
