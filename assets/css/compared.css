@@ -72,6 +72,7 @@
     padding: 6px;
     margin:6px 4px;
     min-width: 100px;
+    max-width: 110px;
     position: relative;
 }
 .ynw-compared-console .empty-plus{
@@ -136,6 +137,7 @@
   align-items: center;
   border-top: 1px solid #eee;
   line-height: 40px;
+  background: #fff;
 }
 
 .ynw-compared-category .caption {
