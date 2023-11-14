@@ -63,6 +63,14 @@ const watchFile = function () {
 };
 
 exports.cssTransform = compileCss;
+exports.build = series(
+  cleanDist,
+  publicResource,
+  compileCss,
+  compileJs,
+  compileHtml
+);
+
 exports.default = series(
   cleanDist,
   publicResource,
