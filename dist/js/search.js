@@ -1,6 +1,6 @@
 $(function () {
   console.log("cccccc");
-  initFormSearch();
+  sortDropInit();
   brandInit();
   adScrollInit();
 });
@@ -26,12 +26,15 @@ function adScrollInit() {
   });
 }
 
-function initFormSearch() {
+// 排序选择
+function sortDropInit() {
   var dorpdom = $("#ynw-dropdown");
   var dropDownItem = $("#ynw-dropdown .ynw-dropdown-item");
-  $(".ynw-search-form #sortBtn").on("click", function (e) {
+  var sortBtn = $(".ynw-search-form #sortBtn");
+  $(sortBtn).on("click", function (e) {
     var top = $(this).offset().top + $(this).height() + "px";
     $(dorpdom).css("top", top).toggle();
+    $(this).find(".iconfont").toggleClass("activeIcon");
   });
 
   $(dorpdom).on("click", function () {
@@ -39,10 +42,17 @@ function initFormSearch() {
   });
 
   $(dropDownItem).on("click", function (e) {
-    $(".ynw-search-form #sortBtn>span")
-      .text($(this).text())
-      .addClass("search-active");
-    $(".ynw-search-form #sortBtn").addClass("search-active");
+    var selVal = $(this).data("value");
+    $(sortBtn).find("span").text($(this).text()).addClass("search-active");
+    $(sortBtn).addClass("search-active");
+    $(sortBtn).find(".iconfont").removeClass("activeIcon");
+    $(dropDownItem).each(function (i, item) {
+      if ($(item).data("value") === selVal) {
+        $(item).addClass("search-active");
+      } else {
+        $(item).removeClass("search-active");
+      }
+    });
   });
 }
 
@@ -51,15 +61,19 @@ function brandInit() {
   var brandDrownBtn = $("#brandBtn");
   var brandModal = $("#ynw-brand-modal");
   var brandModalClose = $("#brand-close-btn");
+
+  // 关闭弹窗
+  function closeBrandModal() {
+    toggleScendBrand();
+    $(brandModal).css("transform", "translateX(100%)");
+  }
+
   // 点击品牌下拉 展示弹窗
   brandDrownBtn.on("click", function (e) {
     $(brandModal).css("transform", "translateX(0)");
   });
   // 关闭弹窗
-  brandModalClose.on("click", function (e) {
-    toggleScendBrand()
-    $(brandModal).css("transform", "translateX(100%)");
-  });
+  brandModalClose.on("click", closeBrandModal);
 
   // 选择品牌
   var brandLetters = $("#brand-letters a");
@@ -71,33 +85,44 @@ function brandInit() {
   var brandItem = $(".me-brand-select-group");
   var hotBrandItem = $(".me-brand-select-hot");
   var scendBrandWrap = $(".scend-brand");
-  var scendBrandVisible=false
+  var scendBrandList = $(".scend-brand .scend-brand-list");
+  var scendBrandVisible = false;
 
   // 切换显示二级品牌选择
   function toggleScendBrand() {
     if (!scendBrandVisible) {
       // show
       $(scendBrandWrap).css("transform", "translateX(0)");
-      scendBrandVisible=true
+      scendBrandVisible = true;
     } else {
       // hide
       $(scendBrandWrap).css("transform", "translateX(100%)");
-      scendBrandVisible=false
+      scendBrandVisible = false;
     }
   }
 
-  hotBrandItem.on('click',function (e) {
-      console.log(e,'点击了热门品牌',e.target)
-      toggleScendBrand()
-  })
-  brandItem.on('click',function (e) {
-      console.log(e,'点击了品牌')
-      toggleScendBrand()
-  })
-//   $("#hot").on("click", function (e) {
-//     console.log(e, "点击了品牌");
-//     toggleScendBrand();
-//   });
+  hotBrandItem.on("click", function (e) {
+    var hotClassName = e.target.className;
+    console.log(e, "点击了热门品牌", e, hotClassName);
+    // if (hotClassName === "")
+    toggleScendBrand();
+  });
+  brandItem.on("click", function (e) {
+    console.log(e, "点击了品牌");
+    toggleScendBrand();
+  });
+  scendBrandList.on("click", function (e) {
+    console.log(e.target, "点击了具体品牌");
+    var scendVal;
+    if ($(e.target).data("value")) {
+      scendVal = $(e.target).data("value");
+    } else {
+      scendVal = $(e.target).parent().data("value");
+    }
+    if (!scendVal) return;
+    console.log("选择了" + scendVal);
+    closeBrandModal();
+  });
 }
 
 // 列表点击

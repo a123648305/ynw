@@ -79,10 +79,16 @@
 .ynw-search-form .selector .search-drown-item>.iconfont{
     font-size: 3.2vw;
     color: inherit;
+    transition: all 0.3s ease;
 }
 
-.ynw-search .ynw-search-form .search-active{
-    color: var(--primaryColor);
+.ynw-search-form .selector .activeIcon{
+    transform: rotate(180deg);
+}
+
+
+.ynw-search .search-active{
+    color: var(--primaryColor) !important;
 }
 
 
