@@ -21,13 +21,26 @@
   background-color: #fff;
   box-shadow: 0 1.1vw 2.7vw 0 rgba(0, 85, 255, 0.08);
   border-radius: 3.2vw;
-  padding: 2.7vw;
+  padding: 1.1vw 2.7vw;
   margin-left: auto;
   color: #bfc5d2;
+  display: inline-flex;
+  align-items: center;
 }
-.ynw-home-header .ynw-home-header-search input {
+.ynw-home-header .ynw-home-header-search > input {
   border: none;
   background-color: #fff;
+  padding-left: 2.7vw;
+}
+
+.ynw-home-header .ynw-home-header-search > input::-moz-placeholder {
+    font-size: 3.7vw;
+    color: #bfc5d2;
+}
+
+.ynw-home-header .ynw-home-header-search > input::placeholder {
+    font-size: 3.7vw;
+    color: #bfc5d2;
 }
 
 .ynw-home-header .ynw-home-header-search .iconfont {
@@ -67,7 +80,7 @@
 }
 
 .ynw-home-nav .active_nav a {
-  font-size: 5.3vw;
+  font-size: 4.8vw;
   font-weight: 700;
   color: #111e36;
   line-height: 11.7vw;
@@ -108,7 +121,6 @@
 }
 
 .ynw-home-bean {
-  position: relative;
   height: 19.2vw;
   margin: 3.2vw 4.3vw 0;
   height: 24vw;
@@ -119,12 +131,14 @@
   width: 200%;
   overflow: hidden;
   will-change: tranform;
-  transform: translate3d(0%, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  display: flex;
+  transition: all 0.1s;
 }
 
 .ynw-home-bean .carousel .c-item {
-  width: 50%;
-  float: left;
+  width: 100%;
   overflow: hidden;
 }
 
