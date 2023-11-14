@@ -25,7 +25,6 @@ function heatScrollInit() {
   slider.on("touchstart", function (e) {
     var _touch = e.originalEvent.targetTouches[0];
     startX=_touch.pageX;
-    console.log("touchStart", startX);
   });
 
   slider.on("touchmove", function (e) {
@@ -33,16 +32,12 @@ function heatScrollInit() {
     var _x = _touch.pageX;
     distanceX = _x - startX;
     var offsetX=-tabWidth * slideTabIndex+distanceX
-    console.log("touchmovvv", _x,distanceX,offsetX);
     isMove=true
     setTranslateX(offsetX)
   });
 
   slider.on("touchend", function (e) {
     if (isMove) {
-        var _touch = e.originalEvent.changedTouches[0];
-        var _x = _touch.pageX;
-        console.log("touchmoend",naviDom.length, _x);
         if (Math.abs(distanceX) >= tabWidth / 3) {
             if (distanceX > 0&&slideTabIndex>0) {
                 slideTabIndex--;
