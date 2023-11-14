@@ -16,6 +16,7 @@
 }
 .ynw-baseInfo-header-left .icon-houtui {
   font-size: 20px;
+  color: var(--primaryTextColor);
 }
 
 .ynw-baseInfo-header-right {
@@ -42,7 +43,7 @@
   width: 16px;
   height: 4px;
   margin-left: 50%;
-  background: #19ac81;
+  background: var(--primaryColor);
   border-radius: 2px;
   transform: translateX(-50%);
 }
@@ -50,8 +51,8 @@
   position: relative;
   opacity: 0.7;
 }
-.ynw-baseInfo-header-mid .titleActive {
-  color: #252525;
+.ynw-baseInfo-header-mid .titleActive .tab-Name  {
+  color: var(--primaryColor);
   font-weight: 800;
   font-size: 18px;
   opacity: 1;

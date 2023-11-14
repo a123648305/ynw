@@ -41,7 +41,7 @@
   width: 16px;
   height: 4px;
   margin-left: 50%;
-  background: #19ac81;
+  background:var(--primaryColor);
   border-radius: 2px;
   transform: translateX(-50%);
 }
@@ -49,8 +49,8 @@
   position: relative;
   opacity: 0.7;
 }
-.ynw-configureInfo-header-mid .titleActive {
-  color: #252525;
+.ynw-configureInfo-header-mid .titleActive .tab-Name {
+  color:var(--primaryColor);
   font-weight: 800;
   font-size: 18px;
   opacity: 1;
@@ -84,7 +84,7 @@
 }
 
 .ynw-configureInfo-container .list-group-item.active {
-  color: #19ac81;
+  color: var(--primaryColor);
   background-color: #fff;
 }
 
@@ -96,7 +96,7 @@
   width: 4px;
   height: 16px;
   transform: translateY(-50%);
-  background-color: #19ac81;
+  background-color: var(--primaryColor);
 }
 
 .ynw-configureInfo-container .scrollspy-content {

@@ -67,7 +67,7 @@
 }
 .ynw-home-nav > ul li a {
   min-width: 50px;
-  color: #111e36;
+  color: var(--primaryTextColor);
   font-size: 16px;
 }
 .ynw-home-nav .active_nav {
@@ -77,7 +77,7 @@
 .ynw-home-nav .active_nav a {
   font-size: 18px;
   font-weight: 700;
-  color: #111e36;
+  color: var(--primaryColor);
   line-height: 44px;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .ynw-home-bean .navi i.activate {
-  background-color: #111e36;
+  background-color: var(--primaryColor);
 }
 
 .homepage-bean__item {
@@ -183,7 +183,7 @@
   display: block;
   margin: 4px -6px 0;
   font-size: 12px;
-  color: #111e36;
+  color: var(--primaryColor);
   white-space: nowrap;
   pointer-events: none;
   -webkit-transform: scale(0.8);
@@ -222,7 +222,7 @@
 .ynw-home-heat .ynw-home-heat-head .ynw-home-heat-head__item {
   padding: 0 10px;
   font-size: 14px;
-  color: #111e36;
+  color: var(--primaryTextColor);
   line-height: 50px;
   vertical-align: top;
 }
@@ -230,6 +230,7 @@
 .ynw-home-heat .ynw-home-heat-head .activate {
   font-size: 16px;
   font-weight: 700;
+  color: var(--primaryColor);
 }
 
 .ynw-home-heat-content {
@@ -240,7 +241,7 @@
 .ynw-home-heat-content__imagetext {
   width: 20%;
   font-size: 12px;
-  color: #111e36;
+  color: var(--primaryAColor);
   text-align: center;
   white-space: nowrap;
   padding: 8px 0;

@@ -371,7 +371,7 @@
   font-size: 12px;
 }
 .ynw-detail .ynw-detail-list-item .choose strong {
-  color: #05f;
+  color: var(--primaryColor);
 }
 
 .ynw-detail .ynw-detail-list-item .factory {
@@ -386,9 +386,9 @@
 }
 
 .ynw-detail .ynw-detail-list-item .pk {
-  color: #05f;
+  color: var(--primaryColor);
   margin-left: auto;
-  border: 1px solid #05f;
+  border: 1px solid var(--primaryColor);
   border-radius: 4px;
   padding: 4px 20px;
   margin-top: 10px;

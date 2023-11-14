@@ -101,7 +101,7 @@
     display: block;
 }
 .ynw-category-nand-group .ynw-category-nand-group-item .category-product-blue{
-    color: #0070bb;
+    color: var(--primaryListcolor);
     font-weight: bold;
     padding-bottom: 6px;
 }
@@ -125,7 +125,7 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #0070bb;
+    color: var(--primaryListcolor);
     font-weight: bold;
     font-size: 18px;
 }

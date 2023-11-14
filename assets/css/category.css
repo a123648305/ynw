@@ -70,12 +70,12 @@
     background-color: #f5f5f5;
     border: 1px solid #e0e4e9;
     border-radius: 4px;
-    color: #0070bb;
+    color: var(--primaryAColor);
 }
 .ynw-category-group .category-large a{
     font-size: 16px;
     font-weight: bold;
-    color: #0070bb;
+    color: var(--primaryAColor);
 }
 .ynw-category-group .category-small{
 
@@ -83,7 +83,7 @@
 .ynw-category-group .category-small .category-small-title{
     font-size: 13px;
     font-weight: bold;
-    color: #585d62;
+    color: var(--primaryTextColor);
     padding-top: 18px;
     padding-bottom: 9px;
     border-bottom: 1px solid #bec5cf;

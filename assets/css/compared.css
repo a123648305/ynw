@@ -30,8 +30,8 @@
 }
 
 .ynw-compared-nav-title {
-  border-bottom: 1px solid #2873ff;
-  color: #2873ff;
+  border-bottom: 1px solid var(--primaryColor);;
+  color: var(--primaryColor);
   text-align: center;
   font-size: 18px;
 }

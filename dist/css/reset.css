@@ -11,7 +11,8 @@ html {
   height: 100%;
   --primaryColor:#407FE3;
   --primaryAColor:#337ab7;
-  --primarytextColor:#333;
+  --primaryTextColor:#333;
+  --primaryListcolor: #337ab7;
 }
 body {
   color: #333;
