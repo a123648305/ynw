@@ -214,8 +214,7 @@
 .ynw-home-heat .ynw-home-heat-head {
   white-space: nowrap;
   padding: 0 10px;
-  transition: all 0.3s ease;
-  transform: translateX(0);
+  overflow: auto;
 }
 
 .ynw-home-heat .ynw-home-heat-head::-webkit-scrollbar {
