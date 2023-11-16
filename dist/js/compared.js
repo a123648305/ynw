@@ -17,7 +17,7 @@ function tableSlideInit() {
     $(".differ-main").each(function (i, item) {
       if ($(item) !== $(_this)) {
         $(item).scrollLeft($(_this).scrollLeft());
-      } 
+      }
     });
   });
 
@@ -50,4 +50,24 @@ function test() {
   //     scrollLeft: "600px",
   //   });
   $(".differ-main").scrollLeft(500);
+}
+
+function swapIndex(e) {
+  console.log(e.target, "swap");
+
+  var toastDom = document.createElement("div");
+  toastDom.innerHTML = `<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed;top: 50%;left: 50%;z-index: 300;transform: translateX(-50%) translateY(-50%);">
+    <div class="toast-body">对比切换成功</div>
+  </div>`;
+  $("body").append(toastDom);
+
+  $(".toast")
+    .toast({
+      delay: 500,
+    })
+    .toast("show");
+
+  $(".toast").on("hidden.bs.toast", function () {
+    toastDom.remove();
+  });
 }
