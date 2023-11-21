@@ -3,6 +3,7 @@
   position:fixed;
   width: 100%;
   height: 100%;
+  overflow:hidden auto;
 }
 .ynw-home-header {
   position: relative;
@@ -12,7 +13,7 @@
 }
 .ynw-home-header .logo {
   margin-right: 10px;
-  width: 60px;
+  width: 100px;
   height: 30px;
 }
 .ynw-home-header .logo img {
@@ -34,6 +35,15 @@
   border: none;
   background-color: #fff;
   padding-left: 10px;
+  max-width: 140px;
+}
+
+.ynw-home-header .ynw-home-header-search .ynw-home-header-input{
+    border: none;
+    background-color: #fff;
+    padding-left: 10px;
+    min-width: 140px;
+    display: inline-block;
 }
 
 .ynw-home-header .ynw-home-header-search > input::placeholder {
@@ -253,4 +263,28 @@
   width: 36px;
   height: 36px;
   margin-bottom: 4px;
+}
+
+
+.ynw-home-classify{
+    padding: 15px;
+}
+.ynw-home-classify-title{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.ynw-home-classify-desc{
+    padding: 4px 0;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.ynw-home-classify li{
+    padding: 10px 0 10px 14px;
+    border-bottom: 1px solid #e0e4e9;
+}
+.ynw-home-classify a{
+    color: var(--primaryAColor);
 }
