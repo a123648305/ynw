@@ -2,6 +2,7 @@ const { src, watch, dest, series } = require("gulp");
 const postcss = require("gulp-postcss");
 const gulpServer = require("gulp-webserver");
 const clean = require("gulp-clean");
+const less = require("gulp-less");
 
 const cleanDist = function () {
   return src("dist", { read: false }).pipe(clean());
@@ -16,7 +17,10 @@ const publicResource = function () {
 
 //处理css
 const compileCss = function () {
-  return src(["assets/css/**/*.css"]).pipe(postcss()).pipe(dest("dist/css"));
+  return src(["assets/css/**/*.less"])
+    .pipe(less())
+    .pipe(postcss())
+    .pipe(dest("dist/css"));
 };
 
 //处理js

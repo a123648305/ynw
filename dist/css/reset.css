@@ -9,9 +9,9 @@
 }
 html {
   height: 100%;
-  --primaryColor:#407FE3;
-  --primaryAColor:#337ab7;
-  --primaryTextColor:#333;
+  --primaryColor: #407FE3;
+  --primaryAColor: #337ab7;
+  --primaryTextColor: #333;
   --primaryListcolor: #337ab7;
 }
 body {
@@ -119,7 +119,7 @@ a {
   outline: none;
   color: #333;
 }
-a:hover{
+a:hover {
   text-decoration: none !important;
   outline: none;
 }
@@ -206,18 +206,17 @@ a:hover{
 .dn {
   display: none !important;
 }
-
 /*flex 相关*/
-.d-flex{
+.d-flex {
   display: flex;
 }
-.d-flex-right{
+.d-flex-right {
   margin-left: auto;
 }
-.d-flex-column{
+.d-flex-column {
   flex-direction: column;
 }
-.d-flex-center{
+.d-flex-center {
   justify-content: center;
   align-items: center;
 }

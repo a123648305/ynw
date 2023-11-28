@@ -7,7 +7,6 @@
 .ynw-detail p {
   margin-bottom: 0;
 }
-
 .ynw-detail-header {
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@
 .ynw-detail-header-left .icon-houtui {
   font-size: 5.3vw;
 }
-
 .ynw-detail-header-right {
   flex: 1;
   color: #5f6670;
@@ -40,7 +38,6 @@
   font-weight: 500;
   padding: 0 2.7vw;
 }
-
 .ynw-detail-header-mid .header-title .bottom-active {
   width: 4.3vw;
   height: 1.1vw;
@@ -59,19 +56,16 @@
   font-size: 4.8vw;
   opacity: 1;
 }
-
 .ynw-detail-container {
   flex: 1;
   overflow: auto;
 }
-
 .ynw-detail-base {
   border-radius: 1.6vw;
   margin: 3.2vw 2.1vw;
   background-color: #ffffff;
   padding: 3.7vw 2.7vw;
 }
-
 .ynw-detail-base .price {
   color: #ff3600;
 }
@@ -92,7 +86,6 @@
   color: #5f6670;
   margin-bottom: 1.6vw;
 }
-
 .ynw-detail-base .price-method {
   display: flex;
   justify-content: space-between;
@@ -103,13 +96,11 @@
   align-items: center;
   color: darkorange;
 }
-
 .ynw-detail-base .product-name {
   font-size: 5.3vw;
   color: #333333;
   font-weight: 600;
 }
-
 .ynw-detail-base .product-tags {
   margin: 1.6vw 0;
   display: flex;
@@ -123,7 +114,6 @@
 .ynw-detail-base .product-tags .iconfont {
   margin-left: auto;
 }
-
 .ynw-detail-base .price-im {
   display: flex;
   background-color: #f5f7fa;
@@ -146,7 +136,6 @@
   padding: 1.1vw;
   border-radius: 1.1vw;
 }
-
 .ynw-detail-base .base-info-action {
   display: flex;
 }
@@ -163,21 +152,17 @@
 .ynw-detail-base .base-info-action .base-info-action-item:nth-child(1) {
   margin-right: 2.7vw;
 }
-
 .ynw-detail-base .base-info-action .base-info-action-item img {
   width: 4.8vw;
   height: 4.8vw;
   margin-right: 2.1vw;
 }
-
 .ynw-detail-base .base-info-action .base-info-action-item .iconfont {
   margin-left: auto;
 }
-
 .ynw-detail-base .info-list {
   margin-top: 2.7vw;
 }
-
 .ynw-detail-base .info-list .info-list-item {
   display: flex;
   align-items: center;
@@ -189,7 +174,6 @@
   width: 10.7vw;
   font-weight: 600;
 }
-
 .ynw-detail-base .info-list .info-list-item .item-value {
   flex: 1;
   display: flex;
@@ -204,7 +188,6 @@
   width: 25%;
   position: relative;
 }
-
 .ynw-detail-base .info-list .info-list-item .value {
   color: #333333;
   font-weight: 500;
@@ -217,7 +200,6 @@
   width: 8vw;
   height: 8vw;
 }
-
 .ynw-detail-base .info-list .info-list-item .label {
   color: #5f6670;
   font-size: 3.2vw;
@@ -226,7 +208,6 @@
   text-overflow: ellipsis;
   max-width: 96%;
 }
-
 /*大家都在看*/
 .ynw-detail .ynw-detail-watch {
   border-radius: 1.6vw;
@@ -244,7 +225,6 @@
   height: 1.1vw;
   margin-left: 10.7vw;
 }
-
 .ynw-detail .ynw-detail-watch .product {
   margin-top: 5.3vw;
   display: flex;
@@ -285,7 +265,6 @@
   vertical-align: top;
   margin-top: 2.1vw;
 }
-
 .ynw-detail .ynw-detail-watch .product-item-other {
   color: #8f96a0;
   font-weight: 400;
@@ -298,7 +277,6 @@
   color: #d8dde6;
   margin: 0 1.6vw;
 }
-
 .ynw-detail .ynw-detail-watch .product-item-price {
   color: #ff4d18;
   font-size: 3.2vw;
@@ -311,7 +289,6 @@
   font-size: 3.2vw;
   content: "万";
 }
-
 /*比价列表*/
 .ynw-detail .ynw-detail-list {
   margin: 2.1vw;
@@ -335,7 +312,6 @@
   line-height: 8vw;
   background-image: linear-gradient(90deg, #f8f9fc, #fff);
 }
-
 .ynw-detail .ynw-detail-list .ynw-detail-list-item li {
   border-bottom: 1px solid #d8dde6;
   padding: 1.6vw;
@@ -343,7 +319,6 @@
 .ynw-detail .ynw-detail-list .ynw-detail-list-item li:last-child {
   border: none;
 }
-
 .ynw-detail .ynw-detail-list-item .caption {
   padding-right: 10.7vw;
   font-size: 4.3vw;
@@ -355,7 +330,6 @@
   white-space: nowrap;
   max-width: 80%;
 }
-
 .ynw-detail .ynw-detail-list-item .caption-price {
   font-size: 3.2vw;
   color: #f60;
@@ -364,7 +338,6 @@
 .ynw-detail .ynw-detail-list-item .caption-price strong {
   font-size: 4.8vw;
 }
-
 .ynw-detail .ynw-detail-list-item .choose {
   color: #666d7f;
   flex: 1;
@@ -373,7 +346,6 @@
 .ynw-detail .ynw-detail-list-item .choose strong {
   color: var(--primaryColor);
 }
-
 .ynw-detail .ynw-detail-list-item .factory {
   flex: 2;
   font-size: 3.2vw;
@@ -384,7 +356,6 @@
   font-size: 3.7vw;
   color: #0c8;
 }
-
 .ynw-detail .ynw-detail-list-item .pk {
   color: var(--primaryColor);
   margin-left: auto;
@@ -395,7 +366,6 @@
   letter-spacing: 0.5vw;
   font-size: 3.7vw;
 }
-
 .ynw-detail .ynw-detail-list-item .pk .iconfont {
   font-size: 4.8vw;
 }
