@@ -52,7 +52,7 @@ const watchFile = function () {
     publicResource();
     cb();
   });
-  watch("./assets/css/**/*.css", (cb) => {
+  watch("./assets/css/**/*.less", (cb) => {
     compileCss();
     cb();
   });

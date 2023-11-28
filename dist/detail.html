@@ -15,9 +15,9 @@
     <!-- bootstrap && jq-->
     <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <script src="./lib/jquery-1.9.1.min.js"></script>
-    <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script> -->
     <!-- 页面js -->
-    <script src="./js/detail.js"></script>
+    <script src="./js/search.js"></script>
   </head>
   <body>
     <div class="ynw-official-detail">
@@ -32,114 +32,365 @@
       </header>
 
       <section class="ynw-official-detail-content">
-        <h3>MT6186M</h3>
-        <p>
-          MT6186M是一款基于ARM Cortex-M3内核的ARM处理器，其主要特点是其采用ARM
-          Cortex-M3内核，具有高速、高效、低功耗、高可靠性、高可扩展性、高可维护性、高可靠性、高可扩展性、高可维护性、高可靠性、高可扩展性、高可
-        </p>
-        <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <div class="title-tag">
+          <h1>天玑9000</h1>
+        </div>
+        <div class="share">
+          <!--分享：-->
+        </div>
+        <div class="clear"></div>
+        <div class="desc">
+          <div>
+            天玑9000这款处理器采用三丛集架构，1颗X2大核+3颗
+            A710大核心+4颗A510小核心，最高频率3.05GHz，基于台积电4nm制程，GPU是Mail
+            G710
+            MP10，支持蓝牙5.3，新型北斗三代导航技术，7500Mbps速率的LPDDR5X内存。
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="desc">
+          <div><br /></div>
+          <div>
+            <div>性能特征：</div>
+            <div>1、高性能的超大核 Cortex-X2</div>
+            <div>
+              天玑9000采用新代armv9架构CPU，为智能手机提供超乎想象的强大计算性能
+            </div>
+            <div>●超大核：1个Arm Cortex-X2核心，频率3.05GHz</div>
+            <div>●大核：3个Arm Cortex-A70核心，频率2.85GHz</div>
+            <div>●小核：4个Arm Cortex-A510能效核心</div>
+            <div>●支持LPDDR5X内存，速率可达7500Mbps</div>
+            <div><br /></div>
+            <div>2、ISP性能飞跃HDR效果出众</div>
+            <div>
+              旗舰级18位HDR-ISP图像信号处理器，可实现三个摄像头同时拍摄HDR视频，同时拥有低功耗表现，让用户享受非凡的拍摄体验。
+            </div>
+            <div>●高性能ISP处理速庋高达90亿像素/秒</div>
+            <div>●支持三个摄像头同时处理18位HDR视频且三摄均支持三重曝光</div>
+            <div>●最高可支持3.2亿像素摄像头</div>
+          </div>
+          <div><br /></div>
+          <div>
+            <div>3、无线网络与音频技术</div>
+            <div>
+              天玑9000持续提升无线连接性能，为游戏、流媒体和视频会议等关键应用打造流畅的使用体验，支持时延更低的WFi和蓝牙技术。
+            </div>
+            <div>●支持蓝牙5.3</div>
+            <div>●支持wifi6E 2x2 MIMO</div>
+            <div>
+              ●支持即将到来的蓝牙LE Audio，提供双链路真无线立体声音频体验
+            </div>
+            <div>●支持新型北斗Ⅲ代-B1C GNSS</div>
+          </div>
+          <div><br /></div>
+          <div>
+            <div>4、支持3GPPR16的新一代5G调制解调器</div>
+            <div>
+              ●天玑9000集成的5G调制解调器 MediaTek M80符合3GPP
+              R16标准，支持Sub-6GHz 5G全频段网络。
+            </div>
+            <div>
+              ●3CC多載波聚合300MHz下行速率理论峰值7Gbps，超乎想像的Sub6GHz
+              5G网络体验
+            </div>
+            <div>
+              ●率先支持R16超级上行，包括补充上行和上行载波聚合两种技术方案，速率更快MediaTek
+              5G ULtraSave2.0省电技术再升级，大棍降低5G通信功耗。
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="ynw-official-detail-ad">
-        <img src="./img/ad.jpg" alt="ad" />
+        <img src="./img/banner3.jpg.webp" alt="ad" />
         <div class="keywords">
-          <span>机械防抖摄像头</span>
-          <span>18-30可变焦模组</span>
-          <span>显示屏方案</span>
-          <span>摄像头方案</span>
-          <span>18-30可变焦模组2</span>
-          <span>显示屏方案3</span>
-          <span>摄像头方案4</span>
+          <div class="keywords-item">
+            <span>机械防抖摄像头</span> <span>18-30可变焦模组</span>
+          </div>
+          <div class="keywords-item">
+            <span>显示屏方案</span>
+            <span>摄像头方案</span>
+          </div>
+          <div class="keywords-item">
+            <span>18-30可变焦模组2</span>
+            <span>显示屏方案3</span>
+          </div>
+          <div class="keywords-item">
+            <span>18-30可变焦模组2</span>
+            <span>摄像头方案4</span>
+          </div>
         </div>
       </section>
 
       <section class="ynw-official-detail-tabs">
-        <nav class="tab-nav">
+        <nav class="tab-nav" onclick="tabChange(event)">
           <div class="nav-tab-item active">全部</div>
           <div class="nav-tab-item">帖子</div>
           <div class="nav-tab-item">资料</div>
         </nav>
         <div class="tab-content">
           <p class="tab-content-title"><span>"MT6186M"</span>的帖子</p>
-          <table>
-            <thead>
-              <tr>
-                <td>主题</td>
-                <td>板块</td>
-                <td>作者</td>
-                <td>回复/查看</td>
-                <td>最后发表</td>
-              </tr>
-            </thead>
-            <tr>
-              <td>
-                <div class="theme-td">
-                  <i class="iconfont icon-houtui"></i>
-                  <div class="theme-td-text">
-                    MT6186M是一款基于ARM,是一款基于ARM,是一款基于ARM是一款基于ARM是一款基于ARM
-                    <i class="iconfont icon-houtui"></i>
-                  </div>
+          <div class="ticks">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th class="theme">主题</th>
+                  <td class="by">版块</td>
+                  <td class="by">作者</td>
+                  <td class="num">回复/查看</td>
+                  <td class="by">最后发表</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="theme-td">
+                      <i class="iconfont icon-houtui"></i>
+                      <div class="theme-td-text">
+                        MT6186M是一款基于ARM,是M是一款基于ARM
+                        <i class="iconfont icon-houtui"></i>
+                      </div>
+                    </div>
+                  </td>
+                  <td>MTK硬件</td>
+                  <td>
+                    <p>不吃鱼的猫</p>
+                    <p><em>2023-1-5</em></p>
+                  </td>
+                  <td>
+                    <p>4</p>
+                    <p><em>20</em></p>
+                  </td>
+                  <td>
+                    <p>4</p>
+                    <p><em>2023-1-5</em></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="theme-td">
+                      <i class="iconfont icon-houtui"></i>
+                      <div class="theme-td-text">
+                        MT6186M是一款基于ARM,是一款基于ARM基于ARM
+                        <i class="iconfont icon-houtui"></i>
+                      </div>
+                    </div>
+                  </td>
+                  <td>MTK硬件</td>
+                  <td>
+                    <p>不吃鱼的猫</p>
+                    <p><em>2023-1-5</em></p>
+                  </td>
+                  <td>
+                    <p>4</p>
+                    <p><em>20</em></p>
+                  </td>
+                  <td>
+                    <p>4</p>
+                    <p><em>2023-1-5</em></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="information">
+            <div class="information-items">
+              <img src="./img/down_load_icon.png" alt="down1" />
+              <div class="information-items-content">
+                <a
+                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                  b1onclick="showWindow('attachpay', this.href)"
+                  target="_blank"
+                  ><div class="information-items-title">
+                    MT6370_PMIC_Data_Sheet_V04.docx
+                  </div></a
+                >
+                <div class="information-items-msg">
+                  <p>大小：2.72 MB</p>
+                  <p>
+                    更新日期：2021-12-24 09:18:47
+                    <span class="free"> 2rdb </span>
+                  </p>
                 </div>
-              </td>
-              <td>MTK硬件</td>
-              <td>
-                <p>不吃鱼的猫</p>
-                <p>2023-1-5</p>
-              </td>
-              <td>
-                <p>4</p>
-                <p>441</p>
-              </td>
-              <td>
-                <p>4</p>
-                <p>441</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="theme-td">
-                  <i class="iconfont icon-houtui"></i>
-                  <div class="theme-td-text">
-                    MT6186M是一款基于ARM,是一款基于ARM,是一款基于ARM是一款基于ARM是一款基于ARM
-                    <i class="iconfont icon-houtui"></i>
-                  </div>
+              </div>
+              <a
+                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                id="aid129563"
+                target="_blank"
+                class="information-items--download"
+                >下载</a
+              >
+            </div>
+            <div class="information-items">
+              <img src="./img/down_load_icon.png" alt="down1" />
+              <div class="information-items-content">
+                <a
+                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                  b1onclick="showWindow('attachpay', this.href)"
+                  target="_blank"
+                  ><div class="information-items-title">
+                    MT6370_PMIC_Data_Sheet_V04.docx
+                  </div></a
+                >
+                <div class="information-items-msg">
+                  <p>大小：2.72 MB</p>
+                  <p>
+                    更新日期：2021-12-24 09:18:47
+                    <span class="free"> 2rdb </span>
+                  </p>
                 </div>
-              </td>
-              <td>MTK硬件</td>
-              <td>
-                <p>不吃鱼的猫</p>
-                <p>2023-1-5</p>
-              </td>
-              <td>
-                <p>4</p>
-                <p>441</p>
-              </td>
-              <td>
-                <p>4</p>
-                <p>441</p>
-              </td>
-            </tr>
-          </table>
+              </div>
+              <a
+                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                id="aid129563"
+                target="_blank"
+                class="information-items--download"
+                >下载</a
+              >
+            </div>
+            <div class="information-items">
+              <img src="./img/down_load_icon.png" alt="down1" />
+              <div class="information-items-content">
+                <a
+                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                  b1onclick="showWindow('attachpay', this.href)"
+                  target="_blank"
+                  ><div class="information-items-title">
+                    MT6370_PMIC_Data_Sheet_V04.docx
+                  </div></a
+                >
+                <div class="information-items-msg">
+                  <p>大小：2.72 MB</p>
+                  <p>
+                    更新日期：2021-12-24 09:18:47
+                    <span class="free"> 2rdb </span>
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                id="aid129563"
+                target="_blank"
+                class="information-items--download"
+                >下载</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="ynw-official-detail-hot">
         <div class="hot-title">热门推荐</div>
         <div class="hot-content">
-          <p></p>
+          <div>一牛MTK技术交流QQ群：947753880</div>
+          <div>MTK方案定制,请联系</div>
+          <div>
+            <b
+              ><font color="#f00000" style="font-size: medium">13316559917</font
+              ><font size="2"
+                ><font color="#f00000">(</font>微信同号，加号请备注：MTK<font
+                  color="#f00000"
+                  >）</font
+                ></font
+              ></b
+            >
+          </div>
+          <div>MTK系列开发板/核心板:</div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-997.html"
+              target="_blank"
+              rel=""
+              >MTK5G-MT6853开发板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-791.html"
+              target="_blank"
+              rel=""
+              >MTK5G-MT6873开发板</a
+            >&nbsp;<a
+              href="https://bbs.16rd.com/shop_product-1-512.html"
+              target="_blank"
+              rel=""
+              >MT6771-4G核心板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-512.html"
+              target="_blank"
+              rel=""
+              >mt8788 AI智能模块</a
+            >&nbsp;<a
+              href="https://bbs.16rd.com/shop_product-1-289.html"
+              target="_blank"
+              rel=""
+              >MT6763开发板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-289.html"
+              target="_blank"
+              rel=""
+              >MT6762开发板</a
+            >&nbsp;<a
+              href="https://bbs.16rd.com/shop_product-1-289.html"
+              target="_blank"
+              rel=""
+              >MT6761开发板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-289.html"
+              target="_blank"
+              rel=""
+              >MT6765开发板</a
+            >&nbsp;<a
+              href="https://bbs.16rd.com/shop_product-1-293.html"
+              target="_blank"
+              rel=""
+              >MT6757芯片核心板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/shop_product-1-295.html"
+              target="_blank"
+              rel=""
+              >MT6753核心板</a
+            >&nbsp;<a
+              href="https://bbs.16rd.com/shop_product-1-382.html"
+              target="_blank"
+              rel=""
+              >MT6739开发板</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://bbs.16rd.com/mall_list-2.html"
+              target="_blank"
+              rel=""
+              >更多开发板点击查看</a
+            >
+          </div>
         </div>
       </section>
 
       <section class="ynw-official-detail-hot ynw-official-detail-keyword">
         <div class="hot-title">热门词条</div>
         <div class="hot-content">
-          <span>MT6186M</span>
-          <span>MT6187M</span>
-          <span>MT6189M</span>
-          <span>MT6190M</span>
-          <span>MT6191M</span>
-          <span>MT6191M</span>
-          <span>MT6191M</span>
+          <a href="#" class="active-keyword">MT6186M</a>
+          <a href="#">MT6187M</a>
+          <a href="#">MT6189M</a>
+          <a href="#">MT6190M</a>
+          <a href="#">MT6191M</a>
+          <a href="#">MT6191M</a>
+          <a href="#">MT6191M</a>
         </div>
       </section>
 
@@ -147,16 +398,20 @@
         <div class="hot-title">热门资料下载</div>
         <div class="hot-content">
           <a href="#" download>
-            <i class="iconfont icon-xiazai"></i> ynw-official-detail-hot.zip</a
+            <img src="./img/down_load_icon.png" alt="down" />
+            ynw-official-detail-hot.zip</a
           >
           <a href="#" download>
-            <i class="iconfont icon-xiazai"></i> ynw-official-detail-hot.zip</a
+            <img src="./img/down_load_icon.png" alt="down" />
+            ynw-official-detail-hotynw -of333ficial-detail-hot.zip</a
           >
           <a href="#" download>
-            <i class="iconfont icon-xiazai"></i> ynw-official-detail-hot.rar</a
+            <img src="./img/down_load_icon.png" alt="down" />
+            ynw-official-detail-hot.rar</a
           >
           <a href="#" download>
-            <i class="iconfont icon-xiazai"></i> ynw-official-detail-hot.zip</a
+            <img src="./img/down_load_icon.png" alt="down" />
+            ynw-official-detail-hot.zip</a
           >
         </div>
       </section>

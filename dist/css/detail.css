@@ -1,0 +1,253 @@
+.ynw-official-detail {
+  background: #f7f7f7;
+  padding: 1.1vw 1.6vw;
+}
+.ynw-official-detail .ynw-official-header {
+  font-size: 3.2vw;
+  color: #333;
+  height: 8vw;
+}
+.ynw-official-detail .ynw-official-detail-content {
+  background: #fff;
+  padding: 5.3vw;
+  box-sizing: border-box;
+  margin-bottom: 4vw;
+  border: 1px solid #ededed;
+}
+.ynw-official-detail .ynw-official-detail-content .title-tag h1 {
+  font-size: 5.9vw;
+  color: #4c4c4c;
+  font-weight: 700;
+}
+.ynw-official-detail .ynw-official-detail-content .desc {
+  font-size: 3.7vw;
+  color: #666;
+  line-height: 5.9vw;
+}
+.ynw-official-detail .ynw-official-detail-content .clear {
+  clear: both;
+}
+.ynw-official-detail .ynw-official-detail-ad {
+  background: #fff;
+  padding: 5.3vw;
+  padding-right: 2.7vw;
+  box-sizing: border-box;
+  margin-bottom: 4vw;
+  border: 1px solid #ededed;
+  display: flex;
+}
+.ynw-official-detail .ynw-official-detail-ad img {
+  width: 32vw;
+  height: 26.7vw;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords {
+  padding-left: 2.7vw;
+  flex: 1;
+  font-size: 3.7vw;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords .keywords-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords span {
+  line-height: 6.4vw;
+  display: inline-block;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords span:nth-child(2n + 1) {
+  color: #fc0707;
+  font-weight: bold;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords span:nth-child(2n) {
+  color: #0429ff;
+}
+.ynw-official-detail .ynw-official-detail-ad .keywords span:nth-child(3n) {
+  color: #333;
+  font-weight: bold;
+}
+.ynw-official-detail .ynw-official-detail-tabs {
+  background: #fff;
+  padding: 5.3vw;
+  box-sizing: border-box;
+  margin-bottom: 4vw;
+  border: 1px solid #ededed;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-nav {
+  display: flex;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-nav .nav-tab-item {
+  height: 8vw;
+  line-height: 8vw;
+  color: #666;
+  font-size: 3.2vw;
+  width: 24vw;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4.3vw;
+  cursor: pointer;
+  margin-right: 5.3vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-nav .active {
+  background: #ee3030;
+  border: 1px solid #ee3030;
+  color: #fff;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content {
+  margin-top: 3.7vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .tab-content-title {
+  font-size: 4.3vw;
+  color: #4c4c4c;
+  height: 9.3vw;
+  line-height: 9.3vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .tab-content-title span {
+  color: #ee3030;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table {
+  font-size: 3.2vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table thead {
+  line-height: 3.7vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table thead .theme {
+  font-weight: 700;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table thead .by {
+  width: 26.7vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table thead .num {
+  width: 26.7vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table em {
+  font-size: 2.9vw;
+  color: #999;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .ticks table p {
+  margin-bottom: 0;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information {
+  border: 1px solid #e6e6e6;
+  padding: 0 1.6vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #e6e6e6;
+  padding: 1.6vw 0;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items:last-child {
+  border-bottom: none;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items img {
+  width: 8vw;
+  height: 8vw;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items-content {
+  flex: 1;
+  padding-left: 2.7vw;
+  overflow: hidden;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items-content .information-items-title {
+  font-size: 4.3vw;
+  font-weight: bold;
+  color: #0060d1;
+  height: 8vw;
+  line-height: 8vw;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items-content .information-items-msg {
+  font-size: 3.2vw;
+  color: #b4b4b4;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items-content .information-items-msg p {
+  margin-bottom: 0;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items-content .free {
+  color: #ee3030;
+}
+.ynw-official-detail .ynw-official-detail-tabs .tab-content .information .information-items .information-items--download {
+  background: #3eb140;
+  color: #fff;
+  font-size: 3.7vw;
+  padding: 0px 5.3vw;
+  height: 8vw;
+  line-height: 8vw;
+  text-align: center;
+  border-radius: 1.1vw;
+}
+.ynw-official-detail .ynw-official-detail-hot {
+  background: #fff;
+  padding: 5.3vw;
+  box-sizing: border-box;
+  margin-bottom: 4vw;
+  border: 1px solid #ededed;
+}
+.ynw-official-detail .ynw-official-detail-hot .hot-title {
+  padding-bottom: 2.7vw;
+  padding-left: 2.7vw;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.ynw-official-detail .ynw-official-detail-hot .hot-title::before {
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 3.7vw;
+  background: #3f93f2;
+  top: 30%;
+  left: 0;
+  transform: translateY(-30%);
+  position: absolute;
+}
+.ynw-official-detail .ynw-official-detail-hot .hot-content {
+  font-size: 3.7vw;
+  padding-top: 2.7vw;
+}
+.ynw-official-detail .ynw-official-detail-hot .hot-content a {
+  color: #333;
+}
+.ynw-official-detail .ynw-official-detail-hot .hot-content a:hover {
+  color: #ee3030;
+}
+.ynw-official-detail .ynw-official-detail-keyword .hot-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ynw-official-detail .ynw-official-detail-keyword .hot-content a {
+  font-size: 3.2vw;
+  color: #3377aa;
+  padding: 0 2.7vw;
+  height: 6.4vw;
+  line-height: 6.4vw;
+  margin: 1.3vw;
+  border: 1px solid #ededed;
+  background: #edf5fa;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ynw-official-detail .ynw-official-detail-keyword .hot-content .active-keyword {
+  background-color: #3377aa;
+  color: #fff;
+}
+.ynw-official-detail .ynw-official-detail-down .hot-content {
+  display: flex;
+  flex-direction: column;
+}
+.ynw-official-detail .ynw-official-detail-down .hot-content a {
+  font-size: 3.7vw;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 8vw;
+  line-height: 8vw;
+}
+.ynw-official-detail .ynw-official-detail-down .hot-content a img {
+  width: 5.3vw;
+  height: 5.3vw;
+}
