@@ -16,6 +16,9 @@
 .ynw-official-search .ynw-official-header .icon-xiangyoujiantou {
   font-size: 3.2vw;
 }
+.ynw-official-search .ynw-official-header .current-text {
+  display: none;
+}
 .ynw-official-search .ynw-official-search-box {
   background: url("/img/search_bg.png") no-repeat;
   background-size: 100% 100%;

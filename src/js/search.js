@@ -9,14 +9,15 @@ function searchKeyword() {
 
   $(".ynw-official-search-result").show();
   $(".ynw-official-search-detail-hot").show();
+  $('.current-text').val(keyword).show()
 }
 
 function quickSearch(e) {
   var quickKeyword = $(e.target).data("letter");
-
   if (quickKeyword) {
     $(".ynw-official-search-result").show();
     $(".ynw-official-search-detail-hot").show();
+    $('.current-text').val(keyword).show()
   }
   console.log(quickKeyword);
 }
@@ -25,6 +26,7 @@ function resetKeyword() {
   $("#search").val("");
   $(".ynw-official-search-result").hide();
   $(".ynw-official-search-detail-hot").hide();
+  $('.current-text').hide()
 }
 
 // 列表点击
