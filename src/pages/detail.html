@@ -22,13 +22,11 @@
   <body>
     <div class="ynw-official-detail">
       <header class="ynw-official-header">
-        <i class="iconfont icon-houtui"></i>
-        <i class="iconfont icon-qianjin"></i>
+        <i class="iconfont icon-shouye"></i>
+        <i class="iconfont icon-xiangyoujiantou"></i>
         <span>芯片词条</span>
-        <i class="iconfont icon-qianjin"></i>
+        <i class="iconfont icon-xiangyoujiantou"></i>
         <span>MT6186M</span>
-        <i class="iconfont icon-houtui"></i>
-        <span>相关帖子</span>
       </header>
 
       <section class="ynw-official-detail-content">
@@ -124,157 +122,171 @@
 
       <section class="ynw-official-detail-tabs">
         <nav class="tab-nav" onclick="tabChange(event)">
-          <div class="nav-tab-item active">全部</div>
-          <div class="nav-tab-item">帖子</div>
-          <div class="nav-tab-item">资料</div>
+          <div class="nav-tab-item active" data-value="all">全部</div>
+          <div class="nav-tab-item" data-value="ticks">帖子</div>
+          <div class="nav-tab-item" data-value="information">资料</div>
         </nav>
         <div class="tab-content">
-          <p class="tab-content-title"><span>"MT6186M"</span>的帖子</p>
-          <div class="ticks">
-            <table border="1">
-              <thead>
-                <tr>
-                  <th class="theme">主题</th>
-                  <td class="by">版块</td>
-                  <td class="by">作者</td>
-                  <td class="num">回复/查看</td>
-                  <td class="by">最后发表</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="theme-td">
-                      <i class="iconfont icon-houtui"></i>
-                      <div class="theme-td-text">
+          <div class="ticks-wrap" id="ticks">
+            <p class="tab-content-title"><span>"MT6186M"</span>的帖子</p>
+            <div class="ticks" id="ticks">
+              <table cellspacing="0" cellpadding="0">
+                <thead class="thead-light">
+                  <tr>
+                    <th class="theme">主题</th>
+                    <td class="by">版块</td>
+                    <td class="by">作者</td>
+                    <td class="num">回复/查看</td>
+                    <td class="by">最后发表</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="theme-td">
+                        <img
+                          src="https://bbs.16rd.com/static/image/common/folder_common.gif"
+                        />
                         MT6186M是一款基于ARM,是M是一款基于ARM
-                        <i class="iconfont icon-houtui"></i>
+                        <img
+                          src="https://bbs.16rd.com/static/image/filetype/common.gif"
+                          alt="attachment"
+                          title="附件"
+                          align="absmiddle"
+                        />
                       </div>
-                    </div>
-                  </td>
-                  <td>MTK硬件</td>
-                  <td>
-                    <p>不吃鱼的猫</p>
-                    <p><em>2023-1-5</em></p>
-                  </td>
-                  <td>
-                    <p>4</p>
-                    <p><em>20</em></p>
-                  </td>
-                  <td>
-                    <p>4</p>
-                    <p><em>2023-1-5</em></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="theme-td">
-                      <i class="iconfont icon-houtui"></i>
-                      <div class="theme-td-text">
-                        MT6186M是一款基于ARM,是一款基于ARM基于ARM
-                        <i class="iconfont icon-houtui"></i>
+                    </td>
+                    <td>MTK硬件</td>
+                    <td>
+                      <p>不吃鱼的猫</p>
+                      <p><em>2023-1-5</em></p>
+                    </td>
+                    <td>
+                      <p>4</p>
+                      <p><em>20</em></p>
+                    </td>
+                    <td>
+                      <p>4</p>
+                      <p><em>2023-1-5</em></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="theme-td">
+                        <img
+                          src="https://bbs.16rd.com/static/image/common/folder_common.gif"
+                        />
+                        MT6186M是一款基于ARM,是M是一款基于ARM
+                        <img
+                          src="https://bbs.16rd.com/static/image/filetype/common.gif"
+                          alt="attachment"
+                          title="附件"
+                          align="absmiddle"
+                        />
                       </div>
-                    </div>
-                  </td>
-                  <td>MTK硬件</td>
-                  <td>
-                    <p>不吃鱼的猫</p>
-                    <p><em>2023-1-5</em></p>
-                  </td>
-                  <td>
-                    <p>4</p>
-                    <p><em>20</em></p>
-                  </td>
-                  <td>
-                    <p>4</p>
-                    <p><em>2023-1-5</em></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                    <td>MTK硬件</td>
+                    <td>
+                      <p>不吃鱼的猫</p>
+                      <p><em>2023-1-5</em></p>
+                    </td>
+                    <td>
+                      <p>4</p>
+                      <p><em>20</em></p>
+                    </td>
+                    <td>
+                      <p>4</p>
+                      <p><em>2023-1-5</em></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-
-          <div class="information">
-            <div class="information-items">
-              <img src="./img/down_load_icon.png" alt="down1" />
-              <div class="information-items-content">
-                <a
-                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
-                  b1onclick="showWindow('attachpay', this.href)"
-                  target="_blank"
-                  ><div class="information-items-title">
-                    MT6370_PMIC_Data_Sheet_V04.docx
-                  </div></a
-                >
-                <div class="information-items-msg">
-                  <p>大小：2.72 MB</p>
-                  <p>
-                    更新日期：2021-12-24 09:18:47
-                    <span class="free"> 2rdb </span>
-                  </p>
+          <div class="information-wrap" id="information">
+            <p class="tab-content-title"><span>"MT6186M"</span>的资料</p>
+            <div class="information" id="information">
+              <div class="information-items">
+                <img src="./img/down_load_icon.png" alt="down1" />
+                <div class="information-items-content">
+                  <a
+                    href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                    b1onclick="showWindow('attachpay', this.href)"
+                    target="_blank"
+                    ><div class="information-items-title">
+                      MT6370_PMIC_Data_Sheet_V04.docx
+                    </div></a
+                  >
+                  <div class="information-items-msg">
+                    <p>大小：2.72 MB</p>
+                    <p>
+                      更新日期：2021-12-24 09:18:47
+                      <span class="free"> 2rdb </span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <a
-                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
-                id="aid129563"
-                target="_blank"
-                class="information-items--download"
-                >下载</a
-              >
-            </div>
-            <div class="information-items">
-              <img src="./img/down_load_icon.png" alt="down1" />
-              <div class="information-items-content">
                 <a
-                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
-                  b1onclick="showWindow('attachpay', this.href)"
+                  href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                  id="aid129563"
                   target="_blank"
-                  ><div class="information-items-title">
-                    MT6370_PMIC_Data_Sheet_V04.docx
-                  </div></a
+                  class="information-items--download"
+                  >下载</a
                 >
-                <div class="information-items-msg">
-                  <p>大小：2.72 MB</p>
-                  <p>
-                    更新日期：2021-12-24 09:18:47
-                    <span class="free"> 2rdb </span>
-                  </p>
-                </div>
               </div>
-              <a
-                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
-                id="aid129563"
-                target="_blank"
-                class="information-items--download"
-                >下载</a
-              >
-            </div>
-            <div class="information-items">
-              <img src="./img/down_load_icon.png" alt="down1" />
-              <div class="information-items-content">
+              <div class="information-items">
+                <img src="./img/down_load_icon.png" alt="down1" />
+                <div class="information-items-content">
+                  <a
+                    href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                    b1onclick="showWindow('attachpay', this.href)"
+                    target="_blank"
+                    ><div class="information-items-title">
+                      MT6370_PMIC_Data_Sheet_V04.docx
+                    </div></a
+                  >
+                  <div class="information-items-msg">
+                    <p>大小：2.72 MB</p>
+                    <p>
+                      更新日期：2021-12-24 09:18:47
+                      <span class="free"> 2rdb </span>
+                    </p>
+                  </div>
+                </div>
                 <a
-                  href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
-                  b1onclick="showWindow('attachpay', this.href)"
+                  href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                  id="aid129563"
                   target="_blank"
-                  ><div class="information-items-title">
-                    MT6370_PMIC_Data_Sheet_V04.docx
-                  </div></a
+                  class="information-items--download"
+                  >下载</a
                 >
-                <div class="information-items-msg">
-                  <p>大小：2.72 MB</p>
-                  <p>
-                    更新日期：2021-12-24 09:18:47
-                    <span class="free"> 2rdb </span>
-                  </p>
-                </div>
               </div>
-              <a
-                href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
-                id="aid129563"
-                target="_blank"
-                class="information-items--download"
-                >下载</a
-              >
+              <div class="information-items">
+                <img src="./img/down_load_icon.png" alt="down1" />
+                <div class="information-items-content">
+                  <a
+                    href="https://bbs.16rd.com/forum.php?mod=misc&amp;action=attachpay&amp;aid=129563&amp;tid=581646"
+                    b1onclick="showWindow('attachpay', this.href)"
+                    target="_blank"
+                    ><div class="information-items-title">
+                      MT6370_PMIC_Data_Sheet_V04.docx
+                    </div></a
+                  >
+                  <div class="information-items-msg">
+                    <p>大小：2.72 MB</p>
+                    <p>
+                      更新日期：2021-12-24 09:18:47
+                      <span class="free"> 2rdb </span>
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://bbs.16rd.com/forum.php?mod=attachment&amp;aid=MTI5NTYzfDgzYmMyZDc0fDE3MDExNTkwOTV8MHw1ODE2NDY%3D"
+                  id="aid129563"
+                  target="_blank"
+                  class="information-items--download"
+                  >下载</a
+                >
+              </div>
             </div>
           </div>
         </div>

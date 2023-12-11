@@ -1,6 +1,152 @@
-.ynw-search{
+.ynw-official-search {
+  background: #f7f7f7;
+  padding: 4px 6px;
+  height: 100vh;
+  width: 100vw;
+  .ynw-official-header {
+    font-size: 12px;
+    color: #333;
+    height: 30px;
+    .icon-shouye {
+      font-size: 16px;
+      color: #c5d7e3;
+    }
+    .icon-xiangyoujiantou {
+      font-size: 12px;
+    }
+  }
+
+  .ynw-official-search-box {
+    background: url("/img/search_bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    height: 140px;
+    padding: 10px;
+    position: relative;
+    .list-count {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+    .search-input {
+      margin:8px 0 10px 0;
+      box-shadow: 0px 0px 2px #5169ae;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.6);
+      line-height: 36px;
+      border-radius: 18px;
+      display: flex;
+      input {
+        flex: 1;
+        padding: 0px 15px;
+        border: 0;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        color: #4c4c4c;
+        background: none;
+        outline: none;
+      }
+      .search-text {
+        width: 80px;
+        height: 36px;
+        line-height: 34px;
+        font-size: 14px;
+        text-align: center;
+        color: #6991e2;
+        border-radius: 18px;
+        background: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;
+        outline: none;
+      }
+    }
+
+    .search_by_letter {
+      .letters{
+        font-size: 16px;
+        padding-right: 4px;
+        color: #bfb9e8;
+        font-weight: 500;
+      }
+    }
+    .reset_btn{
+        position: absolute;
+        right: 16px;
+        bottom: 4px;
+        font-size: 14px;
+    }
+  }
+
+  .ynw-official-search-result {
+    border: 1px solid #ededed;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    color: #333;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding:0 10px;
+    flex-wrap: wrap;
+    display: none;
+    .match-item {
+      margin: 10px;
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+      .match-keyword {
+        color: #ee3030;
+      }
+    }
+  }
+  .ynw-official-search-detail-hot {
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ededed;
+    margin-top: 20px;
+    display: none;
+    .hot-title {
+      padding-bottom: 10px;
+      padding-left: 10px;
+      border-bottom: 1px solid #e6e6e6;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 14px;
+        background: #3f93f2;
+        top: 30%;
+        left: 0;
+        transform: translateY(-30%);
+        position: absolute;
+      }
+    }
+    .hot-content {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        font-size: 12px;
+        color: #3377aa;
+        padding: 0 10px;
+        height: 24px;
+        line-height: 24px;
+        margin: 5px;
+        border: 1px solid #ededed;
+        background: #edf5fa;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .active-keyword {
+        background-color: #3377aa;
+        color: #fff;
+      }
+    }
+  }
 }

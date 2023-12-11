@@ -5,6 +5,13 @@
     font-size: 12px;
     color: #333;
     height: 30px;
+    .icon-shouye{
+        font-size: 16px;
+        color: #C5D7E3;
+    }
+    .icon-xiangyoujiantou{
+        font-size: 12px;
+    }
   }
 
   .ynw-official-detail-content {
@@ -102,24 +109,32 @@
         color: #4c4c4c;
         height: 35px;
         line-height: 35px;
+        margin-bottom: 0;
         span {
           color: #ee3030;
         }
       }
       .ticks {
+        overflow:auto hidden;
         table {
           font-size: 12px;
           thead {
             line-height: 14px;
+            background-color: #f2f2f2;
+            height: 20px;
+            color: #444;
             .theme {
-              // width:120px
+              min-width: 160px;
               font-weight: 700;
+              padding: 0 8px;
             }
             .by {
-              width: 100px;
+              min-width: 100px;
+              padding: 0 8px;
             }
             .num {
-              width: 100px;
+              min-width: 120px;
+              padding: 0 8px;
             }
           }
           em {
@@ -129,12 +144,15 @@
           p {
             margin-bottom: 0;
           }
+          tr{
+            border-bottom: 1px solid #dbdbdb;
+          }
         }
       }
 
       .information {
         border: 1px solid #e6e6e6;
-        padding:0 6px;
+        padding: 0 6px;
         .information-items {
           display: flex;
           align-items: center;
@@ -165,7 +183,7 @@
             .information-items-msg {
               font-size: 12px;
               color: #b4b4b4;
-              p{
+              p {
                 margin-bottom: 0;
               }
             }

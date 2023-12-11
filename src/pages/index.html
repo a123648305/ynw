@@ -1,3 +1,4 @@
+<!-- search page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,31 +8,110 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
     />
-    <title>demo</title>
+    <title>查询页面</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <!-- bootstrap && jq -->
+    <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./lib/jquery-1.9.1.min.js"></script>
+    <!-- 页面js  -->
+    <script src="./js/search.js"></script>
   </head>
   <body>
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="home.html">首页</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="category.html">全部分类</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="search.html">查询页面</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="detail.html">详情页面</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="compared.html">对比页面</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="baseInfo.html">详情档案</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="configureInfo.html">详情配置</a>
-      </li>
-    </ul>
+    <div class="ynw-official-search">
+      <header class="ynw-official-header">
+        <i class="iconfont icon-shouye"></i>
+        <i class="iconfont icon-xiangyoujiantou"></i>
+        <span>芯片词条</span>
+        <i class="iconfont icon-xiangyoujiantou"></i>
+        <span>MT6186M</span>
+      </header>
+
+      <div class="ynw-official-search-box">
+        <div class="list-count">
+          词条共：<span id="tag_count">31351</span>个
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="请输入芯片型号" id="search" />
+          <button class="search-text" onclick="searchKeyword()">搜索</button>
+        </div>
+        <div class="search_by_letter" onclick="quickSearch(event)">
+          <span class="lftgray">按字母查找：</span
+          ><span class="letters" data-letter="A">A</span>
+          <span class="letters" data-letter="B">B</span>
+          <span class="letters" data-letter="C">C</span>
+          <span class="letters" data-letter="D">D</span>
+          <span class="letters" data-letter="E">E</span>
+          <span class="letters" data-letter="F">F</span>
+          <span class="letters" data-letter="G">G</span>
+          <span class="letters" data-letter="H">H</span>
+          <span class="letters" data-letter="I">I</span>
+          <span class="letters" data-letter="J">J</span>
+          <span class="letters" data-letter="K">K</span>
+          <span class="letters" data-letter="L">L</span>
+          <span class="letters" data-letter="M">M</span>
+          <span class="letters" data-letter="N">N</span>
+          <span class="letters" data-letter="O">O</span>
+          <span class="letters" data-letter="P">P</span>
+          <span class="letters" data-letter="Q">Q</span>
+          <span class="letters" data-letter="R">R</span>
+          <span class="letters" data-letter="S">S</span>
+          <span class="letters" data-letter="T">T</span>
+          <span class="letters" data-letter="U">U</span>
+          <span class="letters" data-letter="V">V</span>
+          <span class="letters" data-letter="W">W</span>
+          <span class="letters" data-letter="X">X</span>
+          <span class="letters" data-letter="Y">Y</span>
+          <span class="letters" data-letter="Z">Z</span>
+        </div>
+        <div class="reset_btn" onclick="resetKeyword()">重置筛选</div>
+      </div>
+
+      <!-- 没有结果 -->
+      <!-- <div class="ynw-official-search-result-empty hide mt-2">
+        <img src="./img/empty.png" alt="empty" />
+        <p>暂时没有符合条件的车源</p>
+      </div> -->
+
+      <!-- 搜索结果-->
+      <div class="ynw-official-search-result mt-2">
+        <a href="./detail.html" class="match-item">
+          <div><span class="match-keyword">G</span>123</div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div><span class="match-keyword">G</span>7288</div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div>123<span class="match-keyword">G</span>50</div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div>123<span class="match-keyword">G</span></div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div><span class="match-keyword">G</span>7288</div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div>123<span class="match-keyword">G</span>50</div>
+        </a>
+        <a href="./detail.html" class="match-item">
+          <div>123<span class="match-keyword">G</span></div>
+        </a>
+      </div>
+
+      <!-- 相关词条 -->
+      <section class="ynw-official-search-detail-hot">
+        <div class="hot-title">相关词条</div>
+        <div class="hot-content">
+          <a href="#" class="active-keyword">MT6186M</a>
+          <a href="#">MT6187M</a>
+          <a href="#">MT6189M</a>
+          <a href="#">MT6190M</a>
+          <a href="#">MT6191M</a>
+          <a href="#">MT6191M</a>
+          <a href="#">MT6191M</a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

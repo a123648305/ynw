@@ -1,6 +1,147 @@
-.ynw-search {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.ynw-official-search {
+  background: #f7f7f7;
+  padding: 1.1vw 1.6vw;
+  height: 100vh;
+  width: 100vw;
+}
+.ynw-official-search .ynw-official-header {
+  font-size: 3.2vw;
+  color: #333;
+  height: 8vw;
+}
+.ynw-official-search .ynw-official-header .icon-shouye {
+  font-size: 4.3vw;
+  color: #c5d7e3;
+}
+.ynw-official-search .ynw-official-header .icon-xiangyoujiantou {
+  font-size: 3.2vw;
+}
+.ynw-official-search .ynw-official-search-box {
+  background: url("/img/search_bg.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
   padding: 0 2.7vw;
+  border: none;
+  outline: none;
+  font-size: 3.7vw;
+  color: #fff;
+  margin-top: 2.7vw;
+  height: 37.3vw;
+  padding: 2.7vw;
+  position: relative;
+}
+.ynw-official-search .ynw-official-search-box .list-count {
+  font-size: 4.3vw;
+  padding-left: 2.7vw;
+}
+.ynw-official-search .ynw-official-search-box .search-input {
+  margin: 2.1vw 0 2.7vw 0;
+  box-shadow: 0px 0px 0.5vw #5169ae;
+  height: 9.6vw;
+  background: rgba(255, 255, 255, 0.6);
+  line-height: 9.6vw;
+  border-radius: 4.8vw;
+  display: flex;
+}
+.ynw-official-search .ynw-official-search-box .search-input input {
+  flex: 1;
+  padding: 0px 4vw;
+  border: 0;
+  height: 9.6vw;
+  line-height: 9.6vw;
+  font-size: 3.7vw;
+  color: #4c4c4c;
+  background: none;
+  outline: none;
+}
+.ynw-official-search .ynw-official-search-box .search-input .search-text {
+  width: 21.3vw;
+  height: 9.6vw;
+  line-height: 9.1vw;
+  font-size: 3.7vw;
+  text-align: center;
+  color: #6991e2;
+  border-radius: 4.8vw;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+}
+.ynw-official-search .ynw-official-search-box .search_by_letter .letters {
+  font-size: 4.3vw;
+  padding-right: 1.1vw;
+  color: #bfb9e8;
+  font-weight: 500;
+}
+.ynw-official-search .ynw-official-search-box .reset_btn {
+  position: absolute;
+  right: 4.3vw;
+  bottom: 1.1vw;
+  font-size: 3.7vw;
+}
+.ynw-official-search .ynw-official-search-result {
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 5.3vw;
+  padding: 2.7vw;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+.ynw-official-search .ynw-official-search-result .match-item {
+  margin: 2.7vw;
+  font-size: 3.7vw;
+  color: #666;
+  text-decoration: none;
+}
+.ynw-official-search .ynw-official-search-result .match-item .match-keyword {
+  color: #ee3030;
+}
+.ynw-official-search .ynw-official-search-detail-hot {
+  background: #fff;
+  padding: 5.3vw;
+  box-sizing: border-box;
+  margin-bottom: 4vw;
+  border: 1px solid #ededed;
+  margin-top: 5.3vw;
+  display: none;
+}
+.ynw-official-search .ynw-official-search-detail-hot .hot-title {
+  padding-bottom: 2.7vw;
+  padding-left: 2.7vw;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.ynw-official-search .ynw-official-search-detail-hot .hot-title::before {
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 3.7vw;
+  background: #3f93f2;
+  top: 30%;
+  left: 0;
+  transform: translateY(-30%);
+  position: absolute;
+}
+.ynw-official-search .ynw-official-search-detail-hot .hot-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ynw-official-search .ynw-official-search-detail-hot .hot-content a {
+  font-size: 3.2vw;
+  color: #3377aa;
+  padding: 0 2.7vw;
+  height: 6.4vw;
+  line-height: 6.4vw;
+  margin: 1.3vw;
+  border: 1px solid #ededed;
+  background: #edf5fa;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ynw-official-search .ynw-official-search-detail-hot .hot-content .active-keyword {
+  background-color: #3377aa;
+  color: #fff;
 }
